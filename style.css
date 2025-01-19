@@ -1,0 +1,635 @@
+:root {
+  /* الألوان الأساسية */
+  --primary: #c4a484;
+  --secondary: #8b4513;
+  --text: #333;
+  --background: #faf6f1;
+  --white: #fff;
+  --overlay: rgba(0, 0, 0, 0.5);
+
+  /* أحجام الخطوط */
+  --font-large: 3.5rem;
+  --font-medium: 1.5rem;
+  --font-small: 1rem;
+
+  /* التباعد */
+  --padding: 1rem;
+  --margin: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* تصميم شريط التنقل */
+nav {
+  background: var(--primary);
+  padding: var(--padding);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.menu-icon {
+  display: none; /* إخفاء الأيقونة بشكل افتراضي */
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* إخفاء الروابط افتراضيًا */
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--primary);
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--secondary);
+}
+
+.lang-switcher {
+  display: flex;
+}
+
+.lang-switcher button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.lang-switcher button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* تصميم القسم الرئيسي (Hero) */
+.hero {
+  background: linear-gradient(var(--overlay), var(--overlay)),
+    url("image/wallpaperflare.com_wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+  padding: var(--padding);
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: var(--font-large);
+  margin-bottom: var(--padding);
+}
+
+.hero p {
+  font-size: var(--font-medium);
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* تصميم المحتوى الرئيسي */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--padding);
+}
+
+section {
+  margin-bottom: var(--margin);
+}
+
+.about-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--margin);
+}
+
+/* تحسينات الهواتف المحمولة */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--padding);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
+
+.about-section h2 {
+  color: var(--secondary);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cities-section {
+  display: grid;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.city {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: block;
+}
+
+.city-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.city {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.city h3 {
+  background: var(--secondary);
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center; /* لتوسيط النص في العنوان */
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px; /* إضافة بعض البادينغ للعنوان */
+  text-align: center; /* لتوسيط النص */
+}
+
+.city-content img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.city-content ul {
+  list-style: none;
+}
+
+.city-content li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.city-content li:before {
+  content: "•";
+  color: var(--secondary);
+  position: absolute;
+  left: 0;
+}
+
+.prices-section {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.price-item {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.5s ease; /* تحديد وقت التحول */
+}
+.price-item:hover {
+  transform: scale(1.1);
+}
+.price-item h3 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.75rem;
+  background: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #723710;
+}
+
+footer {
+  background: var(--primary);
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* RTL Support for Arabic */
+[lang="ar"] {
+  direction: rtl;
+  font-family: "Amiri", serif;
+}
+
+[lang="ar"] .lang-switcher button {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+[lang="ar"] .city-content li {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+[lang="ar"] .city-content li:before {
+  left: auto;
+  right: 0;
+}
+body[lang="de"] {
+  direction: ltr;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .city-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.swiper {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.swiper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.swiper img.active {
+  opacity: 1;
+}
+
+/* إعدادات القسم الرئيسي */
+.cards.contact {
+  padding: 0;
+}
+
+/* إعدادات العنوان */
+.title-wrapper {
+  background-color: rgba(139, 69, 19, 1); /* لون الخلفية */
+  padding: 10px 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center; /* لتوسيط النص */
+  width: 100%; /* التأكد من أن العرض يمتد إلى كامل الصفحة */
+  box-sizing: border-box; /* للتأكد من أن البادينغ لا يؤثر على الحجم الإجمالي */
+}
+
+/* محاذاة العنوان بناءً على اللغة */
+[lang="ar"] .title-wrapper {
+  direction: rtl; /* جعل النص من اليمين لليسار للغة العربية */
+}
+
+[lang="de"] .title-wrapper {
+  direction: ltr; /* جعل النص من اليسار لليمين للغة الألمانية */
+}
+
+/* إعدادات العنوان */
+.title {
+  font-size: 2rem;
+  color: white; /* لون النص */
+  margin: 0;
+  font-weight: 700;
+  text-align: center; /* لتوسيط النص في العنوان */
+}
+
+/* إعدادات الكارت الكبير */
+.content {
+  background: #fff;
+  padding: 20px; /* مسافات داخلية */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* مسافة بين العناصر الداخلية */
+  width: 100%; /* عرض الكارت الكبير مساوي للخلفية */
+  margin: 0 auto 5.5px auto; /* توسيط الكارت مع مسافة من الأسفل */
+  min-height: 250px; /* الطول الافتراضي */
+}
+
+/* إعدادات الكروت */
+.cards-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%; /* عرض الصف مساوي للخلفية */
+  max-width: 1000px;
+  margin: 0 auto; /* توسيط الصف */
+}
+
+.card {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: block;
+  text-decoration: none; /* إزالة الخط الأزرق تحت النص */
+  color: inherit; /* الحفاظ على لون النص الافتراضي */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card .icon {
+  margin-bottom: 15px;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* تحسين العرض على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .cards-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%; /* الكروت تأخذ العرض بالكامل على الشاشات الصغيرة */
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+.executive-section {
+  background: #f5f5f5; /* لون خلفية القسم */
+  padding: 40px 20px;
+}
+.contact-form-container {
+  flex: 2;
+  margin-right: 20px; /* مسافة بين النموذج والصورة */
+}
+
+.academic-supervisor {
+  flex: 1;
+  text-align: center;
+}
+
+.supervisor-image {
+  width: 100%;
+  /*عرضالصورةبالكامل*/
+  max-width: 200px;
+  /*تحديدالحدالأقصىلعرضالصورة*/
+  height: 200px;
+  /*جعلالصورةمربعة*/
+  object-fit: cover;
+  /*لتغطيةالمساحةالمخصصةللصورة*/
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10%;
+}
+
+.supervisor-name {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: rgba(139, 69, 19, 1);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #c95705;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+/* تحسين العرض على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .executive-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .academic-supervisor {
+    padding-right: 0;
+    margin-bottom: 20px; /* مسافة بين الصورة والنموذج */
+  }
+
+  .contact-form-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.video-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video-link a {
+  font-size: 30px; /* تكبير النص */
+  color: #007bff; /* لون النص */
+  text-decoration: none; /* إزالة الخط السفلي */
+  font-weight: bold;
+}
+
+.video-link a:hover {
+  color: #0056b3; /* تغيير اللون عند التمرير */
+  text-decoration: underline; /* إضافة خط سفلي عند التمرير */
+}

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gram Egypt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <div class="logo" data-ar="جرام مصر 🏛️" data-de="Gram.EGY 🏛️">
+          🏛️ Visit Egypt
+        </div>
+        <div class="menu-icon" onclick="toggleNav()">☰</div>
+        <div class="nav-links">
+          <a href="#about" data-de="Über Ägypten" data-ar="عن مصر"
+            >About Egypt</a
+          >
+          <a href="#cities" data-de="Städte" data-ar="المدن">Cities</a>
+          <a href="#prices" data-de="Preise" data-ar="الأسعار">Prices</a>
+          <a href="#contact" data-de="Kontakt" data-ar="اتصال">Contact</a>
+        </div>
+        <div class="lang-switcher">
+          <button onclick="switchLanguage('ar')">العربية</button>
+          <button onclick="switchLanguage('de')">Deutsch</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero" id="hero">
+      <div class="hero-content">
+        <h1 data-de="Entdecken Sie Ägypten" data-ar="اكتشف روعة مصر">
+          Discover Egypt
+        </h1>
+        <p
+          data-de="Ein Land mit 61 internationalen Filmen, 251 archäologischen Plätze, 22 alte Hauptstädten und 249 moderne Städten"
+          data-ar="تم انتاج 61 فيلم عالمي بها كثير من اثار العالم القديم في 251 موقع اثري ولها 22عاصمة قديمة وبها 249 مدينة"
+        >
+          A country with 61 international films, 251 archaeological sites, 22
+          ancient capitals, and 249 cities
+        </p>
+      </div>
+    </div>
+
+    <main>
+      <section id="about" class="about-section">
+        <h2 data-de="Über Ägypten" data-ar="عن مصر">About Egypt</h2>
+        <p
+          data-de="Über Ägypten sind 61 internationale Filme gemacht worden. Kein Wunder, Ägypten hat in 20 alten Hauptstädten vieles, was die Menschheit weltweit kulturisch hinterlassen hat. Und das sind in 251 verschiedenen Plätzen. Ägypten hat heutzutage 249 Städte, davon ist Kairo die sechstgrößte Stadt der Welt mit 22,5 Millionen Einwohnern. Kairo liegt am Nilfluss, 41 km entlang. Kairo im heutigen Maßstab ist vier Städte in einer. Von Kairo können Sie nie genug haben, ob pharaonisch, koptisch, islamisch oder koptisch ist. Hier sind Dinge, die man in Kairo machen kann."
+          data-ar="مصر اليوم تضم كل ما ترغبون في مشاهدته، من آثار وقلاع وقصور وشوارع وأحياء تأخذكم في رحلة عبر الزمن القديم. وفي أحيائها الحديثة، ستشعرون وكأنكم في مدن أوروبية عصرية. تمتد سواحلها وشواطئها لتمنحكم أجواء جزر الكاريبي، كما توفر جولة في دلتا النيل، من القناطر الخيرية إلى مصبي دمياط ورشيد في البحر المتوسط، فرصة لاكتشاف 15 من أجمل مدن مصر وطبيعتها الساحرة. سنجعل مصر كتاباً مفتوحاً لكم، لتعودوا إليها وكأنكم تزورون مكاناً مألوفاً. يمكنكم تصميم برنامج زيارتكم بما يناسبكم، بين المصيف، وزيارة الآثار، واستكشاف المدن، في رحلة واحدة متكاملة."
+        ></p>
+      </section>
+
+      <section id="cities" class="cities-section">
+        <div class="city">
+          <h3 data-de="Kairo" data-ar="القاهرة">Kairo</h3>
+          <div class="city-content">
+            <div class="swiper">
+              <img src="image/cairo7.jpg" alt="Cairo" />
+              <img src="image/cairo2.jpg" alt="Cairo" />
+              <img src="image/cairo4.jpg" alt="Cairo" />
+              <img src="image/cairo6.jpg" alt="Cairo" />
+              <img src="image/cairo3.jpg" alt="Cairo" />
+              <img src="image/cairo1.jpg" alt="Cairo" />
+            </div>
+
+            <ul>
+              <li
+                data-de="Man kann die pharaonischen Denkmäler und Monumente im Ägyptischen Museum sehen, die Pyramiden von Gizeh und die Stufenpyramide von Sakkara sowie die alte Hauptstadt Memphis."
+                data-ar="القاهرة الفرعونية تشمل المتحف المصري واهرامات الجيزة واهرامات سقارة المدرجة ودهشور وبها العاصمة القديمة ممفيس."
+              ></li>
+              <li
+                data-de="In islamischem und koptischem Kairo kann man die Mohamed-Ali-Moschee und die Zitadelle, auch die Saladin-Zitadelle, sowie den Religionskomplex, die Al-Azhar-Moschee, die Sultan-Hassan-Moschee und die Straßen von Ghorija, El-Darb-El-Ahmar und Gamalija sehen."
+                data-ar="القاهرة الاسلامية وتشمل قلعة محمد علي وقلعة صلاح الدين ومجمع الأديان وجامع السلطان حسن وشارع المعز وأحياء الغورية والجمالية والدرب الأحمر والأزهر."
+              ></li>
+              <li
+                data-de="Koptisches Kairo wurde von König Ismail nach Pariser Art gebaut, und die koptische Architektur in Kairo ist heute genauso beeindruckend wie Paris."
+                data-ar="القاهرة الخديوية والتي بناها الخديوي إسماعيل لتكون باريس الشرق وتشمل منطقة وسط القاهرة وجاردن سيتي والزمالك."
+              ></li>
+              <li
+                data-de="Im Nildelta leben heute mehr als 80 % der ägyptischen Bevölkerung, und dort befinden sich die meisten Städte Ägyptens. Ab Kairo teilt sich der Nil in zwei Arme: Damietta (260 Kilometer lang) und Rosetta, die etwas kürzer ist. Beide sind genauso breit und schön wie der Nil. An ihren Ufern liegen 16 Städte, und in der Nähe gibt es über 20 weitere Städte, dazu kommt die pure Natur entlang der Strände. Man kann mit dem Boot von Kairo bis zum Mittelmeer fahren, wo der Nil mündet, und einige dieser Städte besuchen."
+                data-ar="القاهرة الحديثة وتشمل مدينة نصر و6 أكتوبر والتجمع ومصر الجديدة."
+              ></li>
+              <li
+                data-de="Auch der Nil in Kairo benötigt einen ganzen Tag, um seine Einzigartigkeit und die vielen Sehenswürdigkeiten entlang seiner drei Inseln und der Staudamm von Mohamed Ali zu entdecken."
+                data-ar="نهر النيل حيث تقع مدينة القاهرة بطول 41 كيلو م عليه وهناك مالايقل عن 20 مابين قصور ومباني أثرية على ضفافه بالإضافة إلى جزر الروضة والزمالك والوراق."
+              ></li>
+              <li
+                data-de="Die muslimischen und griechischen alten Gräber sind genauso schön wie das Taj Mahal in India."
+                data-ar="مقابر الإمام الشافعي ومقابر اللاتين ومقابر المماليك لأن بهم مقابر لا تقل جمالا عن تاج محل."
+              ></li>
+              <li
+                data-de="Einen Tag in einem Dorf verbringen, um zu sehen, wie die Bauern in Ägypten leben."
+                data-ar="جولة بالسيارة أو الحافلة في القاهرة، سادس أكبر مدينة عالمية عددا للسكان بـ 22 ونصف مليون نسمة لنرى كيف يعيش وأين هذا العدد الكبير من الناس."
+              ></li>
+              <li
+                data-ar="السهر في مطاعم القاهرة وكفيهاتها والتجول فيها ليلا يمكننا أيضا زيارة مدن الملاهي المختلفة والسيرك ومسرح مصر ودار الأوبرا والتسوق في مولات القاهرة."
+                data-de=""
+              ></li>
+              <li
+                data-ar="الذهاب إلى حدائق القاهرة الفسطاط واليابانية وحديقة الحيوان والأزهر."
+                data-de=""
+              ></li>
+              <li
+                data-ar="قضاء يوم في قرية مصرية لمعايشة الحياة اليومية فيها."
+                data-de=""
+              ></li>
+              <li
+                data-ar="جولة في فرعي دلتا النيل رشيد ودمياط وصولا إلى البحر المتوسط ومشاهدة 14 مدينة من أجمل مدن مصر الواقعة على ضفافهما."
+                data-de=""
+              ></li>
+              <li
+                data-ar="جولة باليخت في قناة السويس التي تضاهي شهرتها شهرة الأهرام بجوار السفن العملاقة."
+                data-de=""
+              ></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="city">
+          <h3 data-de="Alexandria" data-ar="الإسكندرية">Alexandria</h3>
+          <div class="city-content">
+            <div class="swiper">
+              <img src="image/alex.jpg" alt="Alexandria" />
+              <img src="image/alex11.jpg" alt="Alexandria" />
+              <img src="image/alex2.jpg" alt="Alexandria" />
+              <img src="image/alexandria.jpg" alt="Alexandria" />
+              <img
+                src="https://images.pexels.com/photos/15357310/pexels-photo-15357310/free-photo-of-people-near-citadel-of-qaitbay.jpeg"
+                alt="Alexandria"
+              />
+              <img
+                src="https://images.pexels.com/photos/14378199/pexels-photo-14378199.jpeg"
+                alt="Alexandria"
+              />
+              <img
+                src="https://images.pexels.com/photos/13900545/pexels-photo-13900545.jpeg"
+                alt="Alexandria"
+              />
+            </div>
+            <ul>
+              <li
+                data-de="Alexandria, die zweitgrößte Stadt Ägyptens und eine der schönsten Städte des Mittelmeers, hat 5,5 Millionen Einwohner. Alexander der Große hat sie gebaut. In griechischen und römischen Zeiten war sie die kulturische Welthauptstadt. Dort hat Kleopatra, Julius Caesar und Mark Antonio verzaubert. Sie ist die Zwillinge stadt von Kairo. An ihrer Universität haben Sokrates und Platon gelehrt."
+                data-ar="عاصمة العالم الثقافية في العهدين اليوناني والروماني تعلم في جامعتها افلاطون وارسطوا وبناها الاسكندر الاكبروفيها سحرت كيلوباترا يوليوس قيصر ومارك انطونيوا وهي عاصمة مصر الصيفية وتؤام القاهرة في العمارة واكبر مدن البحر المتوسط لا تقل جمالا علي اي مدينة اروبية اخري علي البحر المتوسط.وهي يقضي المصريين صيفهم لمصيفها الجميلة والتي تمتد في ساحل مصر الشمالي بشواطئه حيث يوجد به اكثر من 330 فندق وقرية سىياحية.
+                "
+              ></li>
+              <li
+                data-de="Was man in Alexandria im Sommer machen kann: Wie Sie vor Kurzem gelesen haben, ist Alexandria die größte Stadt des Mittelmeers. Daher kann man vieles machen: tagsüber baden oder durch die Stadt spazieren und abends die Cafés oder Restaurants besuchen."
+                data-ar="متاحف: الآثار الرومانية، اليونانية، القبطية، الإسلامية، ومتحف الأحياء المائية"
+              ></li>
+              <li
+                data-de="Auch an der Nordküste Ägyptens, wo die reichen Ägypter ihren Sommer verbringen, kann man dies alles genießen."
+                data-ar="معالم أثرية: مقابر كوم الشقافة، قلعة قايتباي، المسرح الروماني، وعمود السواري"
+              ></li>
+              <li
+                data-de="Das sind die Sehenswürdigkeiten, die man in Alexandria besuchen kann:"
+                data-ar="حدائق: أنطونيادس، النزهة، الورود، والشلالات"
+              ></li>
+              <li
+                data-de="1. Die römischen Gräber von Kom el-Schokafa."
+                data-ar="القصور: المنتزه، السلاملك، ورأس التين"
+              ></li>
+              <li
+                data-de="2. Das römische Theater."
+                data-ar="عاصمة العالم الثقافية في العهدين اليوناني والروماني"
+              ></li>
+              <li
+                data-de="3. Die Schloss von Qaitbay, Al-Nuzha, Salamlik und Antoniadis."
+                data-ar=""
+              ></li>
+              <li
+                data-de="4. Alexandrias Strände und die Stanley-Brücke."
+                data-ar=""
+              ></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="city">
+          <h3 data-de="Luxor and Aswan" data-ar="الأقصر و أسوان">
+            الأقصر و أسوان
+          </h3>
+          <div class="city-content">
+            <div class="swiper">
+              <img src="image/aswan.jfif" alt="Luxor and Aswan" />
+              <img src="image/luxer.png" alt="Luxor and Aswan" />
+              <img src="image/aswan1.jfif" alt="Luxor and Aswan" />
+              <img src="image/lux.webp" alt="Luxor and Aswan" />
+              <img src="image/aswan2.jpg" alt="Luxor and Aswan" />
+              <img src="image/aswan9.jpg" alt="Luxor and Aswan" />
+              <img src="image/lux5.webp" alt="Luxor and Aswan" />
+              <img src="image/lux7.jpg" alt="Luxor and Aswan" />
+              <img src="image/lux.png" alt="Luxor and Aswan" />
+            </div>
+            <ul>
+              <li
+                data-de="Luxor und Aswan: Können Sie sich wundern lassen, wie die Pharaonen das alles gebaut haben.
+                "
+                data-ar="حيث الآثار والمعابد الفرعونية القديمة "
+              ></li>
+              <li
+                data-de="1- Hier können Sie den Karnak-Tempel-Komplex sehen.
+                "
+                data-ar="معابد الكرنك وحتشبسوت وأبو سمبل ومقابر وادي الملوك والمسلة الناقصة"
+              ></li>
+              <li
+                data-de="2- Tal der Könige und Königinnen: Lassen Sie sich von den 90 Grabanlagen bezaubern.
+                "
+                data-ar="معبد الكرنك ووادي الملوك والملكات"
+              ></li>
+              <li
+                data-de="3- Ramses-der-Zweite-Tempel, Königin-Hatschepsut-Tempel und Thutmosis-der-Dritte-Tempel sehen.
+                "
+                data-ar="نهر النيل الذي تقع عليه كلتا المدينتين"
+              ></li>
+              <li
+                data-de="4- In Aswan können Sie den Abu-Simbel-Tempel und den Kom-Ombo-Tempel sehen.
+                "
+                data-ar="معابد مدينة هابو والسد العالي بأسوان"
+              ></li>
+              <li
+                data-de="5- Horus-Tempel in Edfu und den Tempel von Philae."
+                data-ar=""
+              ></li>
+              <li
+                data-de="6- Der Kitte Berg: Dort ist das Werk, wo die Pharaonen ihre Denkmäler und Tempel hergestellt haben. Dort können Sie den unvollendeten Obelisken und Teile von Tempeln sehen."
+                data-ar=""
+              ></li>
+              <li
+                data-de="7- Assuan-Hochstaudamm und Nasser-See."
+                data-ar=""
+              ></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="city">
+          <h3 data-de="Sinai" data-ar="سيناء">سيناء</h3>
+          <div class="city-content">
+            <div class="swiper">
+              <img src="image/sinai3.jpg" alt="Luxor and Aswan" />
+              <img src="image/sinai1.jpg" alt="Luxor and Aswan" />
+              <img src="image/sinai.webp" alt="Luxor and Aswan" />
+            </div>
+            <ul>
+              <li
+                data-de="Der einzige Ort, an dem der Herr der Welten einem Teil Seines Wesens erschien und wo die meisten Wunder unseres Meisters Moses mit seinem Volk geschahen. Wir werden diese Orte besichtigen, nämlich Wadi Asla, eines der schönsten farbigen Täler in die Welt, das heilige Tal von Tuwa, der Berg Moses und der Tempel der Hathor, wo die Israels sagten: „Mache uns einen Gott, wie sie Götter haben.“"
+                data-ar="المكان الوحيد الذي تجلي فيه رب العالمين علي جزء من كونه وفيها حدثت اغلب معجزات سيدنا موسي مع قومه حيث سنتجول في تلك الاماكن وهي وادي اسلا احد اجمل الوديان الملونة بالعالم والوادي المقدس طوي وجبل موسي ومعبد حتحور حيث قال بني اسرائيل اجعل لنا الاه كما لهم الهة.
+                "
+              >
+                المكان الذي تجلى فيه الله وتلقى موسى الوصايا العشر، ويشمل أيضًا
+                المعجزات العشر مع قومه.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="city">
+          <h3 data-de="Das Hotel" data-ar="الفندق">الفندق</h3>
+          <div class="city-content">
+            <div class="swiper">
+              <img src="image/images.jfif" alt="Hotel" />
+              <img src="image/852.jpg" alt="Hotel" />
+            </div>
+            <ul>
+              <div class="video-link">
+                <a
+                  href="https://youtu.be/DneOVW49raw?si=79ajZ8KH07uirWdi"
+                  target="_blank"
+                  data-ar="فيديو الفندق"
+                  data-de="Hotel Video"
+                  class="translated-text"
+                >
+                  فيديو الفندق
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="prices" class="prices-section">
+        <div class="city">
+          <h3 data-de="Preise und Dienstleistungen" data-ar="الأسعار والخدمات">
+            Prices and Services
+          </h3>
+        </div>
+        <!-- Adding extra div to create space -->
+        <div style="margin-top: 20px"></div>
+        <!-- This line adds space between the title and the price items -->
+        <div class="price-grid">
+          <div class="price-item">
+            <h3 data-de="Tagesausflug" data-ar="اليوم الكامل">Full Day Tour</h3>
+            <p
+              data-de="70 $ pro Tag inklusive Transport und Mahlzeiten von 08:00 Uhr bis Sonnenuntergang und es liegt im Ermessen des Kunden, wann der Tag beginnt und endet."
+              data-ar="70 دولار في اليوم تشمل النقل والوجبات من بداية الساعة 08:00 صباحاً حتي غروب الشمس ومتروك للعميل متي يبدأ اليوم ومتي ينتهى"
+            >
+              $70 per day including transport and meals
+            </p>
+          </div>
+          <div class="price-item">
+            <h3
+              data-de="Familien und Gruppenpreise"
+              data-ar="أسعار العائلات والمجموعات"
+            >
+              Family and Group Prices
+            </h3>
+            <p
+              data-de="Faire Preise für Familien und Gruppen"
+              data-ar="أسعار عادلة للعائلات والمجموعات"
+            >
+              Fair prices for families and groups
+            </p>
+          </div>
+          <div class="price-item">
+            <h3
+              data-de="Appartements und Villen"
+              data-ar="الشقق والفيلات للعائلات"
+            >
+              Apartments and Villas for Families
+            </h3>
+            <p
+              data-de="Ab 100$ pro Tag inklusive mit fruhstuck."
+              data-ar="يبدأ السعر من 100 دولار في اليوم شامل الوجبات"
+            >
+              Starting at $50 per day including meals
+            </p>
+          </div>
+          <div class="price-item">
+            <h3 data-de="Mindestbuchung" data-ar="حجز يوم أو أكثر">
+              Minimum Booking
+            </h3>
+            <p
+              data-de="Buchungen für einen Tag oder mehr möglich"
+              data-ar="يمكن حجز خدماتنا ليوم أو أكثر"
+            >
+              Can book for one day or more
+            </p>
+          </div>
+          <div class="price-item">
+            <h3 data-de="Flughafen Transfer" data-ar="النقل من المطار">
+              Airport Transfer
+            </h3>
+            <p
+              data-de="25$ für den Transfer"
+              data-ar="25 دولار للنقل من المطار أو إليه"
+            >
+              $25 for airport transfer
+            </p>
+          </div>
+          <div class="price-item">
+            <h3
+              data-de="Flugreisen zwischen Städten"
+              data-ar="التنقل بالطائرة بين المدن"
+            >
+              Flight Transfers Between Cities
+            </h3>
+            <p
+              data-de="50$ bis 70$ für Flüge zwischen den ägyptischen Städten"
+              data-ar="50 إلى 70 دولار للطيران بين المدن المصرية"
+            >
+              $50 to $70 for flights between Egyptian cities
+            </p>
+          </div>
+          <div class="price-item">
+            <h3 data-de="Hotelentfernung" data-ar="الفندق يبتعد عن القاهرة">
+              Hotel Distance
+            </h3>
+            <p
+              data-de="20 Minuten von cairo und von allen delta stadten zwichen eine stunde und einund einhalb stunde. Und 2 stunden vin dem bade ort el sokhna am roten mehr mit mehr als 100 resorts und hotel"
+              data-ar="20 دقيقة من القاهرة وساعتين من الإسكندرية ولأكثر مدن الدلتا من بين ساعة إلي ساعة ونصف. الفندق يبتعد عن العين السخنة ساعتين بالسيارة وبها أكثر من 100 فندق وقرية سياحية"
+            >
+              20 minutes by car from Cairo
+            </p>
+          </div>
+          <div class="price-item">
+            <h3 data-de="Zimmerpreise" data-ar="أسعار الغرف">Room Prices</h3>
+            <ul>
+              <li
+                data-de="Einzelzimmer mit Frühstück: 25$"
+                data-ar="غرفة سنجل بالإفطار: 25 دولار"
+              >
+                Single Room with Breakfast: $25
+              </li>
+              <li
+                data-de="Doppelzimmer mit Frühstück: 30$"
+                data-ar="غرفة دبل بالإفطار: 30 دولار"
+              >
+                Double Room with Breakfast: $30
+              </li>
+              <li
+                data-de="Suite (3 Zimmer, Wohnzimmer, Bad, Küche): 100$ pro Nacht"
+                data-ar="جناح (3 غرف وصالة كبيرة، حمام ومطبخ): 100 دولار لليلة"
+              >
+                Suite (3 Rooms, Living Room, Bath, Kitchen): $100 per night
+              </li>
+            </ul>
+          </div>
+          <div class="price-item">
+            <h3 data-de="Ganztägige Tour" data-ar="اليوم الكامل">
+              Full Day Program
+            </h3>
+            <p
+              data-de="70$ für den gesamten Tag, inklusive Transport, Mahlzeiten und gewähltem Programm"
+              data-ar="70 دولار لليوم الكامل يشمل الانتقال والوجبات والبرنامج المختار"
+            >
+              $70 for the full day, including transport, meals, and chosen
+              program
+            </p>
+          </div>
+          <div class="price-item">
+            <h3
+              data-de="Abendprogramm mit Abendessen"
+              data-ar="الانتقال والسهر ليلاً "
+            >
+              Night Program with Dinner
+            </h3>
+            <p
+              data-de="50$ für Abendprogramm mit Abendessen"
+              data-ar="50 دولار للانتقال والسهر ليلاً بالعشاء"
+            >
+              $50 for night program with dinner
+            </p>
+          </div>
+          <div class="price-item">
+            <h3 data-de="7-Tage-Programm" data-ar="البرنامج كامل لمدة 7 أيام">
+              7-Day Program
+            </h3>
+            <p
+              data-de="700$ ohne Flugticket"
+              data-ar="700 دولار لمدة 7 أيام (بدون تذكرة الطيران)"
+            >
+              $700 for 7 days (without flight ticket)
+            </p>
+          </div>
+          <div class="price-item">
+            <h3
+              data-de="7-Tage-Programm + Flugticket"
+              data-ar="البرنامج كامل لمدة 7 أيام + تذكرة الطيران"
+            >
+              7-Day Program + Flight Ticket
+            </h3>
+            <p
+              data-de="1000$ für 7 Tage mit Flugticket"
+              data-ar="1000 دولار لمدة 7 أيام + تذكرة الطيران"
+            >
+              $1000 for 7 days + flight ticket
+            </p>
+          </div>
+          <div class="price-item">
+            <h3
+              data-de="fliegen zwischen Ägyptische Städte"
+              data-ar="التنقل بين المدن بالطائرة"
+            >
+              Flight Between Cities
+            </h3>
+            <p
+              data-de="Zusätzliche 50$ bis 70$."
+              data-ar="يضاف من 50 إلى 70 دولار للطيران بين المدن المصرية"
+            >
+              Additional $50 to $70 for flights between cities
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section" lang="ar">
+        <div class="title-wrapper">
+          <h2 class="title" data-de="Kontakt" data-ar="اتصال">Contact</h2>
+        </div>
+        <div class="content" id="contact-content">
+          <div class="cards-row">
+            <!-- الكارت الأول -->
+            <a href="https://wa.me/201017979696" target="_blank" class="card">
+              <div class="icon">
+                <img
+                  src="image/phone-call.png"
+                  alt="Phone Icon"
+                  class="card-icon"
+                />
+              </div>
+              <div class="info">
+                <h3 data-de="Telefon & WhatsApp" data-ar="الهاتف وواتساب">
+                  Phone & WhatsApp
+                </h3>
+                <p>+201017979696</p>
+              </div>
+            </a>
+            <!-- الكارت الثاني -->
+            <a href="mailto:gram.gti.egy@gmail.com" class="card">
+              <div class="icon">
+                <img src="image/email.png" alt="Email Icon" class="card-icon" />
+              </div>
+              <div class="info">
+                <h3 data-de="E-Mail" data-ar="البريد الإلكتروني">Email</h3>
+                <p>gram.gti.egy@gmail.com</p>
+              </div>
+            </a>
+            <!-- الكارت الثالث -->
+            <a
+              href="https://www.google.com/maps/place/%D8%B4%D8%A7%D8%B1%D8%B9+%D8%A7%D9%84%D9%85%D8%AD%D8%B7%D8%A9%D8%8C+%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9%D8%8C+%D9%85%D8%B1%D9%83%D8%B2+%D9%85%D9%86%D9%8A%D8%A7+%D8%A7%D9%84%D9%82%D9%85%D8%AD%D8%8C+%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9%E2%80%AD/@30.4857921,31.2926915,17z/data=!3m1!4b1!4m6!3m5!1s0x14f7e0f20e8f44cf:0x7cefc9f2cf31a223!8m2!3d30.4857921!4d31.2901166!16s%2Fg%2F1q66z5k88?entry=ttu&g_ep=EgoyMDI1MDExNC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="card"
+            >
+              <div class="icon">
+                <img
+                  src="image/maps-and-flags.png"
+                  alt="Address Icon"
+                  class="card-icon"
+                />
+              </div>
+              <div class="info">
+                <h3 data-de="Adresse" data-ar="العنوان">Address</h3>
+                <p
+                  data-de="Azizia Minia Elkamh / Sharkia"
+                  data-ar="العزيزية منيا القمح / الشرقية"
+                >
+                  Azizia Minia Elkamh / Sharkia
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="prices" class="prices-section" lang="de">
+        <!-- العنوان الجديد داخل الكارت الأبيض -->
+        <div class="title-wrapper">
+          <h2
+            class="title"
+            data-de="Kontakt mit dem Geschäftsführer"
+            data-ar="التواصل مع المدير التنفيذي"
+          >
+            التواصل مع المدير التنفيذي
+          </h2>
+        </div>
+
+        <div class="content" id="contact-content">
+          <div class="cards-row">
+            <!-- إضافة صورة المدير التنفيذي مع الاسم (على اليسار) -->
+            <div class="academic-supervisor">
+              <img
+                src="image/85633041359.png"
+                alt="Executive Director"
+                class="supervisor-image"
+              />
+              <p
+                class="supervisor-name"
+                data-de="Geschäftsführer: Abdel Moniem Abdullah"
+                data-ar="المدير التنفيذي: عبد المنعم عبدالله"
+              >
+                المدير التنفيذي: عبد المنعم عبدالله
+              </p>
+            </div>
+
+            <!-- نموذج الاتصال (على اليمين) -->
+            <div class="contact-form-container">
+              <form
+                id="contactForm"
+                class="contact-form"
+                action="https://api.web3forms.com/submit"
+                method="post"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="1c6a1854-4d71-4648-936e-4d2586562941"
+                />
+
+                <input
+                  type="text"
+                  name="name"
+                  data-placeholder-de="der Name"
+                  data-placeholder-ar="الاسم"
+                  placeholder="الاسم"
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="phone"
+                  data-placeholder-de="Telefon"
+                  data-placeholder-ar="التليفون"
+                  placeholder="التليفون"
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  data-placeholder-de="E-Mail"
+                  data-placeholder-ar="البريد الإلكتروني"
+                  placeholder="البريد الإلكتروني"
+                  required
+                />
+                <textarea
+                  name="message"
+                  data-placeholder-de="Ihre Nachricht"
+                  data-placeholder-ar="رسالتك"
+                  rows="5"
+                  placeholder="رسالتك"
+                  required
+                ></textarea>
+
+                <button type="submit" data-de="Senden" data-ar="إرسال">
+                  Send
+                </button>
+
+                <!--Response-->
+                <p id="formResponse" style="display: none"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2025 Gram.EGY - Copyrights @ Abdelmonem Abdalla</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="contact-us.js"></script>
+  </body>
+</html>
