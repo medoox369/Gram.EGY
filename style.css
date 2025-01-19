@@ -77,21 +77,24 @@ nav {
   }
 
   .nav-links {
-    display: none; /* إخفاء الروابط افتراضيًا */
+    display: none; /* إخفاء القائمة افتراضيًا */
     flex-direction: column;
     gap: 1rem;
     background: var(--primary);
     padding: 1rem;
     position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
+    top: 100%; /* وضع القائمة تحت شريط التنقل */
+    left: 0; /* تبدأ من الحافة اليسرى */
+    width: 100vw; /* تملأ عرض الشاشة بالكامل */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* لضمان ظهورها فوق العناصر الأخرى */
   }
 
   .nav-links.active {
-    display: flex;
+    display: flex; /* إظهار القائمة عند النقر على الأيقونة */
   }
+}
+
 }
 .nav-links a {
   color: var(--text);
