@@ -95,30 +95,33 @@ nav {
   }
 }
 
-}
 .nav-links a {
   color: var(--text);
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.3rem; /* تكبير الخط */
 }
 
 .nav-links a:hover {
   color: var(--secondary);
 }
 
+
 .lang-switcher {
   display: flex;
 }
 
 .lang-switcher button {
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem; /* زيادة المساحة داخل الزر */
   margin-left: 0.5rem;
   border: none;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   cursor: pointer;
   color: var(--text);
+  font-size: 1.5rem; /* تكبير حجم النص */
 }
+
 
 .lang-switcher button:hover {
   background: rgba(255, 255, 255, 0.3);
