@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>صور معالم مصر - شركة السياحة</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Cairo", sans-serif;
+        background-color: #f8f9fa;
+        direction: rtl;
+      }
+
+      header {
+        background-color: #007bff;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #343a40;
+        color: #fff;
+        margin-top: 30px;
+        font-size: 14px;
+      }
+
+      @media (max-width: 600px) {
+        .gallery img {
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <div class="logo" data-ar="جرام مصر 🏛️" data-de="Gram.EGY 🏛️">
+          🏛️ Visit Egypt
+        </div>
+        <div class="menu-icon" onclick="toggleNav()">☰</div>
+        <div class="nav-links">
+                    <a href="#image" data-de="Images" data-ar="الصور">Cities</a>
+          <a href="index.html#about" data-de="Über Uns" data-ar="عن مصر"
+            >About Egypt</a
+          >
+          <a href="index.html#cities" data-de="Städte" data-ar="المدن">Cities</a>
+          <a href="index.html#prices" data-de="Preise" data-ar="الأسعار">Prices</a>
+          <a href="index.html#contact" data-de="Contact" data-ar="اتصال">Contact</a>
+        </div>
+        <div class="lang-switcher">
+          <button onclick="switchLanguage('ar')">العربية</button>
+          <button onclick="switchLanguage('de')">Deutsch</button>
+        </div>
+      </div>
+    </nav>
+    <div class="gallery">
+      <!-- الصور من 1 إلى 81 -->
+      <!-- هستخدم JavaScript لإضافتها تلقائيًا بدل ما تكتبهم يدوي -->
+      <script>
+        for (let i = 1; i <= 80; i++) {
+          document.write(`<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`);
+        }
+      </script>
+    </div>
+
+    <footer>&copy; 2025 شركة عبد المنعم عبدالله ذ.م.م - جميع الحقوق محفوظة</footer>
+  
+    <script src="script.js"></script>
+    <script src="contact-us.js"></script>
+</body>
+  
+</html>
