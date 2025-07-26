@@ -18,13 +18,12 @@
         </div>
         <div class="menu-icon" onclick="toggleNav()">☰</div>
         <div class="nav-links">
-          <a href="images.html" data-de="Images" data-ar="الصور">Cities</a>
+          <a href="#" data-de="Startseite" data-ar="الرئيسية">Home</a>
           <a href="#about" data-de="Über Uns" data-ar="عن الشركة"
             >About Egypt</a
           >
           <a href="#cities" data-de="Städte" data-ar="المدن">Cities</a>
           <a href="#prices" data-de="Preise" data-ar="الأسعار">Prices</a>
-          <a href="#contact" data-de="Contact" data-ar="اتصال">Contact</a>
         </div>
         <div class="lang-switcher">
           <button onclick="switchLanguage('ar')">العربية</button>
@@ -108,6 +107,21 @@
           </div>
         </div>
 
+
+    <div class="gallery">
+      <!-- الصور من 1 إلى 81 -->
+      <!-- هستخدم JavaScript لإضافتها تلقائيًا بدل ما تكتبهم يدوي -->
+      <script>
+        for (let i = 1; i <= 20; i++) {
+          document.write(`<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`);
+        }
+      </script>
+    </div>
+
+
+
+
+
         <div class="city">
           <div class="city-content">
             <ul>
@@ -148,6 +162,19 @@
             </ul>
           </div>
         </div>
+
+    <div class="gallery">
+      <!-- الصور من 1 إلى 81 -->
+      <!-- هستخدم JavaScript لإضافتها تلقائيًا بدل ما تكتبهم يدوي -->
+      <script>
+        for (let i = 21; i <= 40; i++) {
+          document.write(`<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`);
+        }
+      </script>
+    </div>
+
+
+
 
         <div class="city">
           <div class="city-content">
@@ -194,6 +221,17 @@
           </div>
         </div>
 
+
+            <div class="gallery">
+      <!-- الصور من 1 إلى 81 -->
+      <!-- هستخدم JavaScript لإضافتها تلقائيًا بدل ما تكتبهم يدوي -->
+      <script>
+        for (let i = 41; i <= 60; i++) {
+          document.write(`<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`);
+        }
+      </script>
+    </div>
+
         <div class="city">
           <div class="city-content">
             <h1>Sinai</h1>
@@ -210,6 +248,17 @@
           </div>
         </div>
       </section>
+
+          <div class="gallery">
+      <!-- الصور من 1 إلى 81 -->
+      <!-- هستخدم JavaScript لإضافتها تلقائيًا بدل ما تكتبهم يدوي -->
+      <script>
+        for (let i = 61; i <= 80; i++) {
+          document.write(`<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`);
+        }
+      </script>
+    </div>
+
 
       <section id="prices" class="prices-section">
         <div class="city">
@@ -308,81 +357,36 @@
               $1000 for 7 days + flight ticket
             </p>
           </div>
-          <div class="price-item">
-            <h3
-              data-de="fliegen zwischen Ägyptische Städte"
-              data-ar="التنقل بين المدن بالطائرة"
-            >
-              Flight Between Cities
-            </h3>
-            <p
-              data-de="Zusätzliche 50$ bis 70$."
-              data-ar="يضاف من 50 إلى 70 دولار للطيران بين المدن المصرية"
-            >
-              Additional $50 to $70 for flights between cities
-            </p>
-          </div>
+<div class="price-item">
+  <h3
+    data-de="Contact"
+    data-ar="الاتصال"
+  >
+    Contact
+  </h3>
+  <p
+    data-de="Telefon und WhatsApp: +201017919696"
+    data-ar="الهاتف وواتساب: +201017919696"
+  >
+    Phone & WhatsApp: +201017919696
+  </p>
+  <p
+    data-de="E-Mail: gram.gti.egy@gmail.com"
+    data-ar="البريد الإلكتروني: gram.gti.egy@gmail.com"
+  >
+    Email: gram.gti.egy@gmail.com
+  </p>
+  <p
+    data-de="Adresse: El-Azizia, Minya Al Qamh / Al Sharqia"
+    data-ar="العنوان: العزيزية منيا القمح / الشرقية"
+  >
+    Address: El-Azizia, Minya Al Qamh / Al Sharqia
+  </p>
+</div>
+
         </div>
       </section>
 
-      <section id="contact" class="contact-section" lang="ar">
-        <div class="title-wrapper">
-          <h2 class="title" data-de="Contact" data-ar="اتصال">Contact</h2>
-        </div>
-        <div class="content" id="contact-content">
-          <div class="cards-row">
-            <!-- الكارت الأول -->
-            <a href="https://wa.me/201017919696" target="_blank" class="card">
-              <div class="icon">
-                <img
-                  src="image/phone-call.png"
-                  alt="Phone Icon"
-                  class="card-icon"
-                />
-              </div>
-              <div class="info">
-                <h3 data-de="Telefon & WhatsApp" data-ar="الهاتف وواتساب">
-                  Phone & WhatsApp
-                </h3>
-                <p>+201017919696</p>
-              </div>
-            </a>
-            <!-- الكارت الثاني -->
-            <a href="mailto:gram.gti.egy@gmail.com" class="card">
-              <div class="icon">
-                <img src="image/email.png" alt="Email Icon" class="card-icon" />
-              </div>
-              <div class="info">
-                <h3 data-de="E-Mail" data-ar="البريد الإلكتروني">Email</h3>
-                <p>gram.gti.egy@gmail.com</p>
-              </div>
-            </a>
-            <!-- الكارت الثالث -->
-            <a
-              href="https://www.google.com/maps/place/%D8%B4%D8%A7%D8%B1%D8%B9+%D8%A7%D9%84%D9%85%D8%AD%D8%B7%D8%A9%D8%8C+%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9%D8%8C+%D9%85%D8%B1%D9%83%D8%B2+%D9%85%D9%86%D9%8A%D8%A7+%D8%A7%D9%84%D9%82%D9%85%D8%AD%D8%8C+%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9%E2%80%AD/@30.4857921,31.2926915,17z/data=!3m1!4b1!4m6!3m5!1s0x14f7e0f20e8f44cf:0x7cefc9f2cf31a223!8m2!3d30.4857921!4d31.2901166!16s%2Fg%2F1q66z5k88?entry=ttu&g_ep=EgoyMDI1MDExNC4wIKXMDSoASAFQAw%3D%3D"
-              target="_blank"
-              class="card"
-            >
-              <div class="icon">
-                <img
-                  src="image/maps-and-flags.png"
-                  alt="Address Icon"
-                  class="card-icon"
-                />
-              </div>
-              <div class="info">
-                <h3 data-de="Adresse" data-ar="العنوان">Address</h3>
-                <p
-                  data-de="Azizia Minia Elkamh / Sharkia"
-                  data-ar="العزيزية منيا القمح / الشرقية"
-                >
-                  Azizia Minia Elkamh / Sharkia
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
 
       <section id="prices" class="prices-section" lang="de">
         <!-- العنوان الجديد داخل الكارت الأبيض -->
