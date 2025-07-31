@@ -1,12 +1,20 @@
 function switchLanguage(lang) {
-  document.documentElement.lang = lang;
+  const html = document.getElementById("html-tag");
+  const body = document.body;
 
-  // Update all elements with data-ar and data-de attributes
+  html.lang = lang;
+  html.dir = lang === "ar" ? "rtl" : "ltr";
+
+  // إزالة الكلاسات القديمة وإضافة الكلاس الجديد
+  body.classList.remove("lang-ar", "lang-de");
+  body.classList.add(lang === "ar" ? "lang-ar" : "lang-de");
+
+  // تغيير النصوص
   document.querySelectorAll("[data-" + lang + "]").forEach((element) => {
     element.textContent = element.getAttribute("data-" + lang);
   });
 
-  // Update form placeholders
+  // تغيير placeholders
   document.querySelectorAll("input, textarea").forEach((element) => {
     const placeholderAttr = "data-placeholder-" + lang;
     if (element.hasAttribute(placeholderAttr)) {
@@ -14,13 +22,15 @@ function switchLanguage(lang) {
     }
   });
 
-  // Update document title based on language
+  // تغيير العنوان
   const titles = {
     ar: "زوروا أرض الفراعنة",
     de: "Besuchen Sie Ägypten - Entdecken Sie den Zauber der Zivilisation",
   };
   document.title = titles[lang];
 }
+
+
 
 // Handle form submission
 // document.getElementById('contactForm').addEventListener('submit', function(e) {
