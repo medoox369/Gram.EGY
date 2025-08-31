@@ -19,11 +19,14 @@
         <div class="menu-icon" onclick="toggleNav()">☰</div>
         <div class="nav-links">
           <a href="#hero" data-de="Startseite" data-ar="الرئيسية">Home</a>
+          <a href="#prices" data-de="Programme" data-ar="البرامج"
+            >About Egypt</a
+          >
+          <a href="#ddd" data-de="Neues" data-ar="الجديد">About Egypt</a>
+          <a href="#cities" data-de="Städte" data-ar="المدن">Cities</a>
           <a href="#about" data-de="Über Uns" data-ar="عن الشركة"
             >About Egypt</a
           >
-          <a href="#cities" data-de="Städte" data-ar="المدن">Cities</a>
-          <a href="#prices" data-de="Preise" data-ar="الأسعار">Prices</a>
         </div>
         <div class="lang-switcher">
           <button onclick="switchLanguage('ar')">العربية</button>
@@ -33,14 +36,53 @@
     </nav>
 
     <div class="hero" id="hero">
-      <div class="hero-content">
-        <p
-          data-de="Über Ägypten sind 61 internationale Filme gemacht wurden. Kein Wunder, Ägypten hat in 20 alten Hauptstädten vieles, was die Menschheit weltweit kulturisch hinterlassen hat. Und das sind in 251 verschiedenen Plätzen. Ägypten hat heutezutage 249 Städte."
-          data-ar="مصر اليوم تضم كل ما ترغبون في مشاهدته، من آثار وقلاع وقصور وشوارع وأحياء تأخذكم في رحلة عبر الزمن القديم. وفي أحيائها الحديثة، ستشعرون وكأنكم في مدن أوروبية عصرية. تمتد سواحلها وشواطئها لتمنحكم أجواء جزر الكاريبي، كما توفر جولة في دلتا النيل، من القناطر الخيرية إلى مصبي دمياط ورشيد في البحر المتوسط، فرصة لاكتشاف 15 من أجمل مدن مصر وطبيعتها الساحرة. سنجعل مصر كتاباً مفتوحاً لكم، لتعودوا إليها وكأنكم تزورون مكاناً مألوفاً. يمكنكم تصميم برنامج زيارتكم بما يناسبكم، بين المصيف، وزيارة الآثار، واستكشاف المدن، في رحلة واحدة متكاملة."
+      <div
+        class="hero-container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 30px;
+          width: 100%;
+          max-width: 1200px;
+          margin: auto;
+        "
+      >
+        <!-- الفيديو على الشمال -->
+        <div
+          class="video-container"
+          style="flex: 1; min-width: 280px; max-width: 500px"
         >
-          A country with 61 international films, 251 archaeological sites, 22
-          ancient capitals, and 249 cities
-        </p>
+          <div style="position: relative; padding-top: 56.25%">
+            <iframe
+              src="https://player.vimeo.com/video/1114621286?autoplay=1&muted=1&loop=1"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
+              "
+              title="تعرف على أقدم المواقع المصرية المدرجة على قائمة اليونسكو للتراث"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- النص على اليمين -->
+        <div
+          class="hero-content"
+          style="flex: 1; min-width: 300px; text-align: right"
+        >
+          <p
+            data-de="Über Ägypten sind 61 internationale Filme gemacht wurden. Kein Wunder, Ägypten hat in 20 alten Hauptstädten vieles, was die Menschheit weltweit kulturisch hinterlassen hat. Und das sind in 251 verschiedenen Plätzen. Ägypten hat heutezutage 249 Städte.noch dazu 2000 KM strade und 9 monate bade wetter"
+            data-ar="مصر اليوم تضم كل ما ترغبون في مشاهدته، من آثار وقلاع وقصور وشوارع وأحياء تأخذكم في رحلة عبر الزمن القديم. وفي أحيائها الحديثة، ستشعرون وكأنكم في مدن أوروبية عصرية. تمتد سواحلها وشواطئها لتمنحكم أجواء جزر الكاريبي، كما توفر جولة في دلتا النيل، من القناطر الخيرية إلى مصبي دمياط ورشيد في البحر المتوسط، فرصة لاكتشاف 15 من أجمل مدن مصر وطبيعتها الساحرة. سنجعل مصر كتاباً مفتوحاً لكم، لتعودوا إليها وكأنكم تزورون مكاناً مألوفاً."
+          ></p>
+        </div>
       </div>
     </div>
 
@@ -49,11 +91,11 @@
         <div class="city">
           <div class="city-content">
             <ul>
-<h1 data-ar="القاهرة" data-de="Cairo">القاهرة</h1>
+              <h1 data-ar="القاهرة" data-de="Cairo">القاهرة</h1>
               <li
                 data-de="ist die sechstegrößte Stadt der Welt mit 22,5 Millionen Einwohnern. Cairo liegt am Nilfluss, 41 km entlang. Cairo im heutigen Maßstab ist vier Städte in einer. Von Cairo können Sie nie genug haben, ob pharaonisch, coptisch, islamisch oder cotisch ist. Hier sind Dinge, die man in Cairo machen kann."
-              data-ar=""
-                ></li>
+                data-ar=""
+              ></li>
               <li
                 data-de="Man kann die pharaonischen Denkmäler und Monumente im Ägyptischen Museum sehen, die Pyramiden von Gizah und die Stufenpyramide von Sakkara sowie die alte Hauptstadt Memphis."
                 data-ar="القاهرة الفرعونية تشمل المتحف المصري واهرامات الجيزة واهرامات سقارة المدرجة ودهشور وبها العاصمة القديمة ممفيس."
@@ -85,7 +127,7 @@
               ></li>
               <li
                 data-ar="السهر في مطاعم القاهرة وكفيهاتها والتجول فيها ليلا يمكننا أيضا زيارة مدن الملاهي المختلفة والسيرك ومسرح مصر ودار الأوبرا والتسوق في مولات القاهرة."
-                data-de=""
+                data-de="einen frein trg in cairo verbringen mit den offentlichen verkhersmettelen herumfahren und auch zu fuss spatzierengehen."
               ></li>
               <li
                 data-ar="الذهاب إلى حدائق القاهرة الفسطاط واليابانية وحديقة الحيوان والأزهر."
@@ -107,79 +149,181 @@
           </div>
         </div>
 
+        <div class="gallery">
+          <script>
+            for (let i = 1; i <= 20; i++) {
+              if (((i >= 1 && i <= 11) || (i >= 16 && i <= 20)) && i !== 19) {
+                document.write(
+                  `<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`
+                );
+              }
+            }
+          </script>
+        </div>
 
-    <div class="gallery">
-      <!-- الصور من 1 إلى 81 -->
-      <!-- هستخدم JavaScript لإضافتها تلقائيًا بدل ما تكتبهم يدوي -->
-      <script>
-        for (let i = 1; i <= 20; i++) {
-          document.write(`<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`);
-        }
-      </script>
-    </div>
-
-
-
-
-
+        <div id="ddd"></div>
         <div class="city">
           <div class="city-content">
             <ul>
-<h1 data-ar="الإسكندرية" data-de="Alexandria">الإسكندرية</h1>
+              <h1
+                data-ar="الإسكندرية"
+                data-de="Alexandria und Elsokna sind unser neues."
+              >
+                الإسكندرية
+              </h1>
               <li
-                data-de="die zweitegrößte Stadt Ägyptens und eine der schönsten Städte des Mittelmeers, hat 5,5 Millionen Einwohner. Alexander der Große hat sie gebaut. In griechischen und römischen Zeiten war sie die kulturische Welthauptstadt. Dort hat Kleopatra, Julius Caesar und Mark Antonio verzaubert. Sie ist die Zwillinge stadt von Cairo. An ihrer Universität haben Sokrates und Platon gelehrt."
+                data-de="Alexandria die zweitegrößte Stadt Ägyptens und eine der schönsten Städte des Mittelmeers, hat 5,5 Millionen Einwohner. Alexander der Große hat sie gebaut. In griechischen und römischen Zeiten war sie die kulturische Welthauptstadt. Dort hat Kleopatra, Julius Caesar und Mark Antonio verzaubert. Sie ist die Zwillinge stadt von Cairo. An ihrer Universität haben Sokrates und Platon gelehrt."
                 data-ar="عاصمة العالم الثقافية في العهدين اليوناني والروماني تعلم في جامعتها افلاطون وارسطوا وبناها الاسكندر الاكبروفيها سحرت كيلوباترا يوليوس قيصر ومارك انطونيوا وهي عاصمة مصر الصيفية وتؤام القاهرة في العمارة واكبر مدن البحر المتوسط لا تقل جمالا عن اي مدينة اروبية اخري علي البحر المتوسط. وفيها يقضي المصريين صيفهم في مصيفها الجميلة والتي تمتد في ساحل مصر الشمالي بشواطئه حيث يوجد به اكثر من 330 فندق وقرية سىياحية.
                 "
               ></li>
               <li
-                data-de="Was man in Alexandria im Sommer machen kann: Wie Sie vor Kurzem gelesen haben, ist Alexandria die größte Stadt des Mittelmeers. Daher kann man vieles machen: tagsüber baden oder durch die Stadt spazieren und abends die Cafés oder Restaurants besuchen."
+                data-de="Alexandria hat meher als 20 strade und 10 resorte und mher als 290 hotls und westlich von Alexandria ist die nord kuste agyptens dort gibt,s mher als 330 resots und die sind privats eigentum und die eigentumer wollen sie vermieten um die betriebs kosten zu decken und weil die resorts nur 2 oder 3 wochem im jahr besetz sind auserdem sind sie frei das ganze jahr. und 210 hotls im nord kuste noch dazu dort konnen wir zusammen machen wenn sie wessen das alexandria von cairo 2 stunden mit auto intvernt. auch am rotem meer ein einhalb stunde von cairo ist Elsokna dort gebt,s mehr als 1oo resotrs und htels werden auch nur 2 oder 3 wochen im jahr besetz."
                 data-ar="متاحف: الآثار الرومانية، اليونانية، القبطية، الإسلامية، ومتحف الأحياء المائية"
               ></li>
               <li
-                data-de="Auch an der Nordküste Ägyptens, wo die reichen Ägypter ihren Sommer verbringen, kann man dies alles genießen."
+                data-de="Eine bade woche dort mit fruhstuck 7 tage und 6 nachte 200 Eouround fur die gruppen ab 4 prsonen 100 Eouro fur alle pro tag mit fruhstuck im ferien haus in einem diese resorts."
                 data-ar="معالم أثرية: مقابر كوم الشقافة، قلعة قايتباي، المسرح الروماني، وعمود السواري"
               ></li>
               <li
-                data-de="Das sind die Sehenswürdigkeiten, die man in Alexandria besuchen kann:"
+                data-de=""
                 data-ar="حدائق: أنطونيادس، النزهة، الورود، والشلالات"
               ></li>
               <li
-                data-de="1. Die römischen Gräber von Kom el-Schokafa."
+                data-de=""
                 data-ar="القصور: المنتزه، السلاملك، ورأس التين"
               ></li>
               <li
-                data-de="2. Das römische Theater."
+                data-de=""
                 data-ar="عاصمة العالم الثقافية في العهدين اليوناني والروماني"
               ></li>
-              <li
-                data-de="3. Die Schloss von Qaitbay, Al-Nuzha, Salamlik und Antoniadis."
-                data-ar=""
-              ></li>
-              <li
-                data-de="4. Alexandria Strände und die Stanley-Brücke."
-                data-ar=""
-              ></li>
+              <li data-de="" data-ar=""></li>
+              <li data-de="" data-ar=""></li>
+              <li data-de="" data-ar=""></li>
             </ul>
           </div>
         </div>
 
-    <div class="gallery">
-      <!-- الصور من 1 إلى 81 -->
-      <!-- هستخدم JavaScript لإضافتها تلقائيًا بدل ما تكتبهم يدوي -->
-      <script>
-        for (let i = 21; i <= 40; i++) {
-          document.write(`<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`);
-        }
-      </script>
-    </div>
+        <!-- قسم الفيديوهات فوق الصور -->
+        <div
+          class="video-gallery"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+          "
+        >
+          <!-- فيديو 1 -->
+          <div class="video-item" style="flex: 1 1 300px; max-width: 450px">
+            <div style="position: relative; padding-top: 56.25%">
+              <iframe
+                src="https://player.vimeo.com/video/1114633502"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 12px;
+                "
+              ></iframe>
+            </div>
+            <h3 style="text-align: center; margin-top: 8px">Alexandria</h3>
+          </div>
 
+          <!-- فيديو 2 -->
+          <div class="video-item" style="flex: 1 1 300px; max-width: 450px">
+            <div style="position: relative; padding-top: 56.25%">
+              <iframe
+                src="https://player.vimeo.com/video/1114633724"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 12px;
+                "
+              ></iframe>
+            </div>
+            <h3 style="text-align: center; margin-top: 8px">
+              eeinge resorts an die nord kuste
+            </h3>
+          </div>
 
+          <!-- فيديو 3 -->
+          <div class="video-item" style="flex: 1 1 300px; max-width: 450px">
+            <div style="position: relative; padding-top: 56.25%">
+              <iframe
+                src="https://player.vimeo.com/video/1114634203"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 12px;
+                "
+              ></iframe>
+            </div>
+            <h3 style="text-align: center; margin-top: 8px">
+              eeinge resorts an el sokna resorts
+            </h3>
+          </div>
 
+          <!-- فيديو 4 -->
+          <div class="video-item" style="flex: 1 1 300px; max-width: 450px">
+            <div style="position: relative; padding-top: 56.25%">
+              <iframe
+                src="https://player.vimeo.com/video/1114634489"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 12px;
+                "
+              ></iframe>
+            </div>
+            <h3 style="text-align: center; margin-top: 8px">
+              Strände von Alexandria
+            </h3>
+          </div>
+        </div>
+
+        <!-- قسم الصور -->
+        <div class="gallery">
+          <script>
+            for (let i = 21; i <= 40; i++) {
+              if (![21, 22, 29, 31, 40].includes(i)) {
+                document.write(
+                  `<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`
+                );
+              }
+            }
+          </script>
+        </div>
 
         <div class="city">
           <div class="city-content">
             <ul>
-<h1 data-ar="الأقصر وأسوان" data-de="Luxor und Aswan">الأقصر وأسوان</h1>
+              <h1 data-ar="الأقصر وأسوان" data-de="Luxor und Aswan">
+                الأقصر وأسوان
+              </h1>
               <li
                 data-de="Können Sie sich wundern lassen, wie die Pharaonen das alles gebaut haben.
                 "
@@ -221,20 +365,21 @@
           </div>
         </div>
 
-
-            <div class="gallery">
-      <!-- الصور من 1 إلى 81 -->
-      <!-- هستخدم JavaScript لإضافتها تلقائيًا بدل ما تكتبهم يدوي -->
-      <script>
-        for (let i = 41; i <= 60; i++) {
-          document.write(`<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`);
-        }
-      </script>
-    </div>
+        <div class="gallery">
+          <script>
+            for (let i = 41; i <= 60; i++) {
+              if (![44, 45, 50, 52, 54].includes(i)) {
+                document.write(
+                  `<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`
+                );
+              }
+            }
+          </script>
+        </div>
 
         <div class="city">
           <div class="city-content">
-<h1 data-ar="سيناء" data-de="Sinai">سيناء</h1>
+            <h1 data-ar="سيناء" data-de="Sinai">سيناء</h1>
             <ul>
               <li
                 data-de="Der einzige Ort, an dem der Herr der Welten einem Teil Seines Wesens erschien und wo die meisten Wunder unseres Meisters Moses mit seinem Volk geschahen. Wir werden diese Orte besichtigen, nämlich Wadi Asla, eines der schönsten farbigen Täler in die Welt, das heilige Tal von Tuwa, der Berg Moses und der Tempel der Hathor, wo dort propht mosess die zehn Geboten von Gott erhalten hat.“"
@@ -249,16 +394,17 @@
         </div>
       </section>
 
-          <div class="gallery">
-      <!-- الصور من 1 إلى 81 -->
-      <!-- هستخدم JavaScript لإضافتها تلقائيًا بدل ما تكتبهم يدوي -->
-      <script>
-        for (let i = 61; i <= 80; i++) {
-          document.write(`<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`);
-        }
-      </script>
-    </div>
-
+      <div class="gallery">
+        <script>
+          for (let i = 61; i <= 80; i++) {
+            if (![61, 67, 68, 73, 74].includes(i)) {
+              document.write(
+                `<img src="images/${i}.jpeg" alt="صورة رقم ${i}">`
+              );
+            }
+          }
+        </script>
+      </div>
 
       <section id="prices" class="prices-section">
         <div class="city">
@@ -266,140 +412,111 @@
             Prices and Services
           </h3>
         </div>
-        <!-- Adding extra div to create space -->
-        <div style="margin-top: 20px"></div>
-        <!-- This line adds space between the title and the price items -->
-        <div class="price-grid">
-          <div class="price-item">
-            <h3 data-de="Tagesausflug" data-ar="اليوم الكامل">Full Day Tour</h3>
-            <p
-              data-de="70 $ pro Tag inklusive Transport und Mahlzeiten von 08:00 Uhr bis Sonnenuntergang und es liegt im Ermessen des Kunden, wann der Tag beginnt und endet."
-              data-ar="70 دولار في اليوم تشمل النقل والوجبات من بداية الساعة 08:00 صباحاً حتي غروب الشمس ومتروك للعميل متي يبدأ اليوم ومتي ينتهى وذلك في سيارة خاصة مع السائق وهو أيضاً مستشار برامج سياحية"
-            >
-              $70 per day including transport and meals
-            </p>
-          </div>
-          <div class="price-item">
-            <h3
-              data-de="Appartements und Villen"
-              data-ar="الشقق والفيلات للعائلات"
-            >
-              Apartments and Villas for Families
-            </h3>
-            <p
-              data-de="Ab 100$ pro Tag inklusive mit fruhstuck."
-              data-ar="يبدأ السعر من 100 دولار في اليوم شامل الوجبات"
-            >
-              Starting at $50 per day including meals
-            </p>
-          </div>
-          <div class="price-item">
-            <h3 style="color: red;" data-de="Flughafen Transfer" data-ar="مصر ليست القاهرة فقط">
-              Airport Transfer
-            </h3>
-            <p
-              data-de="25$ für den Transfer"
-              data-ar="لو إختار عملاؤكم مصر ولو لثلاثة أيام فيمكنهم قضاء يوم في القاهرة و يوم في الإسكندرية ويوم علي البحر الأحمر بالعين السخنة"
-            >
-              $25 for airport transfer
-            </p>
-          </div>
-          <div class="price-item">
-            <h3
-              data-de="Flugreisen zwischen Städten"
-              data-ar="التنقل بالطائرة بين المدن"
-            >
-              Flight Transfers Between Cities
-            </h3>
-            <p
-              data-de="50$ bis 70$ für Flüge zwischen den ägyptischen Städten"
-              data-ar="50 إلى 70 دولار للطيران بين المدن المصرية"
-            >
-              $50 to $70 for flights between Egyptian cities
-            </p>
-          </div>
-          <div class="price-item">
-            <h3
-              data-de="Abendprogramm mit Abendessen"
-              data-ar="الانتقال والسهر ليلاً "
-            >
-              Night Program with Dinner
-            </h3>
-            <p
-              data-de="50$ für Abendprogramm mit Abendessen"
-              data-ar="50 دولار للانتقال والسهر ليلاً بالعشاء وذلك بسيارة خاصة مع السائق"
-            >
-              $50 for night program with dinner
-            </p>
-          </div>
-          <div class="price-item">
-            <h3 data-de="7-Tage-Programm" data-ar="البرنامج كامل لمدة 7 أيام">
-              7-Day Program
-            </h3>
-            <p
-              data-de="700$ ohne Flugticket"
-              data-ar="700 دولار لمدة 7 أيام (بدون تذكرة الطيران)"
-            >
-              $700 for 7 days (without flight ticket)
-            </p>
-          </div>
-          <div class="price-item">
-            <h3
-              data-de="7-Tage-Programm + Flugticket"
-              data-ar="البرنامج كامل لمدة 7 أيام + تذكرة الطيران"
-            >
-              7-Day Program + Flight Ticket
-            </h3>
-            <p
-              data-de="1000$ für 7 Tage mit Flugticket"
-              data-ar="1000 دولار لمدة 7 أيام + تذكرة الطيران"
-            >
-              $1000 for 7 days + flight ticket
-            </p>
-          </div>
-<div class="price-item">
-  <h3
-    data-de="Contact"
-    data-ar="الاتصال"
-  >
-    Contact
-  </h3>
-  <p
-    data-de="Telefon und WhatsApp: +201017919696"
-    data-ar="الهاتف وواتساب: +201017919696"
-  >
-    Phone & WhatsApp: +201017919696
-  </p>
-  <p
-    data-de="E-Mail: gram.gti.egy@gmail.com"
-    data-ar="البريد الإلكتروني: gram.gti.egy@gmail.com"
-  >
-    Email: gram.gti.egy@gmail.com
-  </p>
-  <p
-    data-de="Adresse: El-Azizia, Minya Al Qamh / Al Sharqia"
-    data-ar="العنوان: العزيزية منيا القمح / الشرقية"
-  >
-    Address: El-Azizia, Minya Al Qamh / Al Sharqia
-  </p>
-</div>
 
-        </div>
+        <div style="margin-top: 20px"></div>
+
+        <ul class="price-list">
+          <li
+            style="font-size: 1.3rem; font-weight: bold"
+            data-de="7 tage und 6 nächte bade und erholungs urlaub in Alexandria oder im nord kuste resorts oder Esokna mit fruhstuck 200 Eouro ohe Flugticket"
+            data-ar="70 دولار في اليوم تشمل النقل والوجبات من بداية الساعة 08:00 صباحاً حتى غروب الشمس"
+          >
+            Full Day Tour - $70 per day including transport and meals
+          </li>
+
+          <li
+            style="font-size: 1.3rem; font-weight: bold"
+            data-de="10 tage paket 7 davon bade urlaub wie nummer 1 und 3 tage cairo sehenswurdigkeitn besechtigen550 Eouro ohne flugtickt mit fruhstuck."
+            data-ar="يبدأ السعر من 100 دولار في اليوم شامل الوجبات"
+          >
+            Apartments and Villas for Families - Starting at $50 per day
+            including meals
+          </li>
+
+          <li
+            style="font-size: 1.3rem; font-weight: bold"
+            data-de="7 tage pr0gramm 3 trge cairo ein tag suez canal und ihr 4 stadte und 2 tage alexandria ein tag im Nil Delta um einge stadte von ihren 80 stade zu sehen fur 1300 ohne flugtickt mit fuhstuck. "
+            data-ar="لو إختار عملاؤكم مصر ولو لثلاثة أيام فيمكنهم قضاء يوم في القاهرة ويوم في الإسكندرية ويوم علي البحر الأحمر بالعين السخنة"
+          >
+            Airport Transfer - $25
+          </li>
+
+          <li
+            style="font-size: 1.3rem; font-weight: bold"
+            data-de="14 tage programm 7 trge brden und erholen in aelxandria oder nord kuste des mittelmeers oder in sokna am rotes meer und 3 tage cairo und 3 tage luxur und asuan mit fulg tickt von cairo nach Asuan ohne internationals flugtickt mit fuhstuck fur 2000 Eouro."
+            data-ar="50 إلى 70 دولار للطيران بين المدن المصرية"
+          >
+            Flight Transfers Between Cities - $50 to $70
+          </li>
+
+          <li
+            style="font-size: 1.3rem; font-weight: bold"
+            data-de="15 TAGE PROGRAMM 6 tage bade urlaub selbest aussuchen .3 tage cairo  ein tag im Nildelta um einge von Delta stade zu sehen mit dem boot oder auto und ein tag im seuz canal und ihr 4 stadte zu sehen.und mit dem flug nach Luxer und Asuan um die Tempel von den phraonen zu sehen das als mit fruhstck und ohne internationals flugtickt fur 2500 EURO."
+            data-ar="50 دولار للانتقال والسهر ليلاً بالعشاء وذلك بسيارة خاصة مع السائق"
+          >
+            Night Program with Dinner - $50
+          </li>
+
+          <li
+            style="font-size: 1.3rem; font-weight: bold"
+            data-de="Es wird Agyptisches Essen serviert."
+            data-ar="700 دولار لمدة 7 أيام (بدون تذكرة الطيران)"
+          >
+            Es wird Agyptisches Essen serviert.</li>
+
+          <li style="font-size: 1.3rem; font-weight: bold"
+            data-de="--------------------------------------------------------"
+            data-ar="1000 دولار لمدة 7 أيام + تذكرة الطيران"
+          ></li>
+          <li
+            style="font-size: 1.4rem; font-weight: bold; color: crimson"
+            data-de="Contact"
+            data-ar="التواصل"
+          >
+            Contact
+          </li>
+
+<ul style="list-style: none; padding: 0; margin: 0;">
+  <li style="font-size: 1.3rem; font-weight: bold">
+    <a 
+      href="https://wa.me/201017919696" 
+      target="_blank" 
+      style="text-decoration: none; color: inherit;"
+      data-de="Telefon und WhatsApp: +201017919696"
+      data-ar="الهاتف وواتساب: +201017919696"
+    >
+      📞 Phone & WhatsApp: +201017919696
+    </a>
+  </li>
+
+  <li style="font-size: 1.3rem; font-weight: bold">
+    <a 
+      href="mailto:gram.gti.egy@gmail.com" 
+      style="text-decoration: none; color: inherit;"
+      data-de="E-Mail: gram.gti.egy@gmail.com"
+      data-ar="البريد الإلكتروني: gram.gti.egy@gmail.com"
+    >
+      ✉️ Email: gram.gti.egy@gmail.com
+    </a>
+  </li>
+
+  <li style="font-size: 1.3rem; font-weight: bold">
+    <a 
+      href="https://maps.app.goo.gl/nh4zktR9hxVaSXCG6" 
+      target="_blank" 
+      style="text-decoration: none; color: inherit;"
+      data-de="Adresse: El-Azizia, Minya Al Qamh / Al Sharqia"
+      data-ar="العنوان: العزيزية منيا القمح / الشرقية"
+    >
+      📍 Address: El-Azizia, Minya Al Qamh / Al Sharqia
+    </a>
+  </li>
+</ul>
+
+        </ul>
       </section>
 
-
       <section id="prices" class="prices-section" lang="de">
-        <!-- العنوان الجديد داخل الكارت الأبيض -->
-        <div class="title-wrapper">
-          <h2
-            class="title"
-            data-de="Contact mit dem Geschäftsführer"
-            data-ar="التواصل مع المدير التنفيذي"
-          >
-            التواصل مع المدير التنفيذي
-          </h2>
-        </div>
-
         <div class="content" id="contact-content">
           <div class="cards-row">
             <!-- إضافة صورة المدير التنفيذي مع الاسم (على اليسار) -->
@@ -487,13 +604,12 @@ Ich sorge dafür, dass meine Gäste mit einem Lächeln nach Hause fliegen – mi
           data-ar="بصفتي مديرًا عامًا، فقد تعلمتُ وعملتُ في النمسا لمدة عشر سنوات، وكنت في آخرها أعمل بشكل مستقل. لقد رأيت مدى جدية الناس في عملهم، وكيف يتطلعون بشوق إلى عطلتهم.
 وأنا أحرص على أن يعود ضيوفي إلى ديارهم بابتسامة، حاملين شعورًا يقول:
 'لقد استمتعنا كثيرًا، لكنه لم يكن كافيًا... نريد أن نعود مرة أخرى.'
-ولقد قرأت كثيراً وسمعت عما يلاقيه الإخوة العرب في مصر من استنزاف مادياً ونفسياً، وأنا سأعمل جاهداً أن يكونوا في أعيننا حتى يعودوا إلى وطنهم سعداء بصورة جديدة عن مصر. سجل تجاري رقم 79314 بتاريخ 17/1/1998 صادر من مكتب سجل تجاري الزقازيق محافظة الشرقية."
-        
-></p>
+ولقد قرأت كثيراً وسمعت عما يلاقيه الإخوة العرب في مصر من استنزاف مادياً ونفسياً، وأنا سأعمل جاهداً أن يكونوا في أعيننا حتى يعودوا إلى وطنهم سعداء بصورة جديدة عن مصر. سجل تجاري رقم 79314 بتاريخ 17/1/1998 صادر من مكتب سجل تجاري الزقازيق محافظة الشرقية. و رقم البطاقة الضريبية 200-146-874 مأمورية الشركات المساهمه بالقاهرة"
+        ></p>
       </section>
 
       <footer>
-        <p>© 2025 Gram.EGY - Copyrights @ Abdelmonem Abdalla</p>
+        <p>© 2025 Gram.EGY - Copyrights @ Abdelmonem Abdalla GMPH</p>
       </footer>
     </main>
 
