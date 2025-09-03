@@ -667,3 +667,23 @@ body.lang-de {
   direction: ltr;
   text-align: left;
 }
+
+
+
+
+/* اللغة العربية */
+.lang-ar .about-section h2,
+.lang-ar .about-section p {
+  direction: rtl;
+  text-align: right;
+  unicode-bidi: plaintext;
+}
+
+/* اللغة الألمانية أو الافتراضية */
+.lang-de .about-section h2,
+.lang-de .about-section p {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: plaintext;
+}
+
