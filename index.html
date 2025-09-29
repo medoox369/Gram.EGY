@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" id="html-tag">
+<html lang="de" dir="ltr" id="html-tag">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,29 +11,31 @@
     />
   </head>
   <body>
-    <nav>
-      <div class="nav-content">
-        <div class="logo" data-ar="جرام مصر 🏛️" data-de="Gram.EGY 🏛️">
-          🏛️ Visit Egypt
-        </div>
-        <div class="menu-icon" onclick="toggleNav()">☰</div>
-        <div class="nav-links">
-          <a href="#hero" data-de="Startseite" data-ar="الرئيسية">Home</a>
-          <a href="#prices" data-de="Programme" data-ar="البرامج"
-            >About Egypt</a
-          >
-          <a href="#ddd" data-de="Neues" data-ar="الجديد">About Egypt</a>
-          <a href="#cities" data-de="Städte" data-ar="المدن">Cities</a>
-          <a href="#about" data-de="Über Uns" data-ar="عن الشركة"
-            >About Egypt</a
-          >
-        </div>
-        <div class="lang-switcher">
-          <button onclick="switchLanguage('ar')">العربية</button>
-          <button onclick="switchLanguage('de')">Deutsch</button>
-        </div>
-      </div>
-    </nav>
+<!-- ضع هذا في index.html (النسخة الألمانية) -->
+<nav>
+  <div class="nav-content" dir="ltr">
+    <div class="logo">Gram.EGY 🏛️</div>
+    <div class="menu-icon" onclick="toggleNav()">☰</div>
+
+    <div class="nav-links">
+      <a href="#hero">Startseite</a>
+      <a href="#prices">Programme</a>
+      <a href="#ddd">Neues</a>
+      <a href="#cities">Städte</a>
+      <a href="#about">Über Uns</a>
+    </div>
+
+    <div class="lang-switcher">
+      <!-- English → current page -->
+      <button type="button" onclick="location.href='index_English.html'">English</button>
+      <!-- Deutsch → opens index_Deutsch.html -->
+      <button type="button" onclick="location.href='index.html'">Deutsch</button>
+      <!-- Arabic → opens index_Arabic.html -->
+      <button type="button" onclick="location.href='index_Arabic.html'">العربية</button>
+    </div>
+  </div>
+</nav>
+
 
     <div class="hero" id="hero">
       <div
@@ -53,11 +55,11 @@
   class="hero-content"
   style="flex: 1; min-width: 300px; text-align: right"
 >
-  <p
-    data-de="Ägypten bietet heute alles, was Sie sehen möchten: von antiken Denkmälern, Festungen und Palästen bis hin zu Straßen und Vierteln, die Sie auf eine Reise in die Vergangenheit mitnehmen. In seinen modernen Stadtteilen fühlen Sie sich wie in zeitgenössischen europäischen Städten. Die Küsten und Strände erstrecken sich über 2000 Kilometer am Roten Meer und Mittelmeer und schenken Ihnen eine Atmosphäre wie auf den Karibikinseln. Eine Tour durch das Nildelta, von den Qanater el-Khairiya bis zu den Mündungen von Damiette und Rosette ins Mittelmeer, bietet die Gelegenheit, 15 der schönsten Städte Ägyptens und ihre bezaubernde Natur zu entdecken. Wir machen Ägypten für Sie zu einem offenen Buch, sodass Sie bei jeder Rückkehr das Gefühl haben, einen vertrauten Ort wiederzusehen."
-    data-ar="مصر اليوم تضم كل ما ترغبون في مشاهدته، من آثار وقلاع وقصور وشوارع وأحياء تأخذكم في رحلة عبر الزمن القديم. وفي أحيائها الحديثة، ستشعرون وكأنكم في مدن أوروبية عصرية. تمتد سواحلها وشواطئها 2000 كليو متر علي البحر الأحمر و المتوسط لتمنحكم أجواء جزر الكاريبي، كما توفر جولة في دلتا النيل، من القناطر الخيرية إلى مصبي دمياط ورشيد في البحر المتوسط، فرصة لاكتشاف 15 من أجمل مدن مصر وطبيعتها الساحرة. سنجعل مصر كتاباً مفتوحاً لكم، لتعودوا إليها وكأنكم تزورون مكاناً مألوفاً."
-  ></p>
+  <p>
+    Ägypten bietet heute alles, was Sie sehen möchten: von antiken Denkmälern, Festungen und Palästen bis hin zu Straßen und Vierteln, die Sie auf eine Reise in die Vergangenheit mitnehmen. In seinen modernen Stadtteilen fühlen Sie sich wie in zeitgenössischen europäischen Städten. Die Küsten und Strände erstrecken sich über 2000 Kilometer am Roten Meer und Mittelmeer und schenken Ihnen eine Atmosphäre wie auf den Karibikinseln. Eine Tour durch das Nildelta, von den Qanater el-Khairiya bis zu den Mündungen von Damiette und Rosette ins Mittelmeer, bietet die Gelegenheit, 15 der schönsten Städte Ägyptens und ihre bezaubernde Natur zu entdecken. Wir machen Ägypten für Sie zu einem offenen Buch, sodass Sie bei jeder Rückkehr das Gefühl haben, einen vertrauten Ort wiederzusehen.
+  </p>
 </div>
+
 
       </div>
     </div>
@@ -66,86 +68,26 @@
       <section id="cities" class="cities-section">
 <div class="city">
   <div class="city-content">
-    <ul>
-      <p 
-  data-ar="الحضارة المصرية إبداع على النيل ليس له مثيل في العالم أجمع، أبدعوا في بناء المعابد، النحت في الجبال، وتقطيعها ونقلها. بنوا الأهرام والمعابد والمقابر، حيث نرى إبداع المصريين في الهندسة، العمارة، الحساب، الفلك، الطب، السحر، الفنون، الملابس والتحنيط."
-  style="font-size: 20px; font-weight: bold; line-height: 1.6;">
-</p>
+    <ul lang="ar">
+      <h1>Cairo</h1>
 
-<p 
-  data-ar="أخونا العربي الكريم، نحن نعمل معكم بنفس الآليات التي تعمل بها شركات السياحة الأوروبية في مصر؛ حيث نحضر عملائنا من المطار إلى الفندق ونذهب بهم أينما يريدون. معنا ستشعرون بحرية وخصوصية كاملة، أفرادًا وعائلات. معنا تفعلون ما تريدون بالطريقة التي تحبونها. نحن نقدم لكم مصر في أحسن صورة ونذهب بكم حيث تشاؤن ضمن حدود الميزانية وبرنامج محدد سلفًا. وبإذن الله ستكون الأمور كما تخيلتموها. تفضلوا واختروا من برامجنا ما يناسبكم."
-  style="font-size: 20px; font-weight: bold; line-height: 1.6;">
-</p>
-<p></p>
-<h1 data-ar="القاهرة" data-de="Cairo">القاهرة</h1>
-
-      <li
-        data-de="Cairo ist die sechstgrößte Stadt der Welt mit 22,5 Millionen Einwohnern. Die Stadt liegt am Nil und erstreckt sich über 41 km entlang des Flusses. Im heutigen Maßstab besteht Cairo aus vier Städten in einer. Von Cairo kann man nie genug bekommen – ob pharaonisch, koptisch, islamisch oder modern. Hier sind einige Dinge, die man in Cairo unternehmen kann."
-        data-ar=""
-      ></li>
-
-      <li
-        data-de="In pharaonischem Cairo kann man die Denkmäler und Ausstellungsstücke im Ägyptischen Museum sehen, die Pyramiden von Gizeh, die Stufenpyramide von Sakkara, Dahschur sowie die alte Hauptstadt Memphis."
-        data-ar="القاهرة الفرعونية تشمل المتحف المصري واهرامات الجيزة واهرامات سقارة المدرجة ودهشور وبها العاصمة القديمة ممفيس."
-      ></li>
-
-      <li
-        data-de="Im islamischen und koptischen Cairo kann man die Mohamed-Ali-Moschee, die Zitadelle von Saladin, den Religionskomplex, die Al-Azhar-Moschee, die Sultan-Hassan-Moschee sowie die Straßen von El-Muizz, Ghurija, El-Darb El-Ahmar und Gamalija besichtigen."
-        data-ar="القاهرة الاسلامية وتشمل قلعة محمد علي وقلعة صلاح الدين ومجمع الأديان وجامع السلطان حسن وشارع المعز وأحياء الغورية والجمالية والدرب الأحمر والأزهر."
-      ></li>
-
-      <li
-        data-de="Das khedivische Cairo wurde von Khedive Ismail nach dem Vorbild von Paris erbaut. Heute beeindruckt seine Architektur in Gebieten wie Downtown, Garden City und Zamalek."
-        data-ar="القاهرة الخديوية والتي بناها الخديوي إسماعيل لتكون باريس الشرق وتشمل منطقة وسط القاهرة وجاردن سيتي والزمالك."
-      ></li>
-
-      <li
-        data-de="Das moderne Cairo umfasst Stadtteile wie Nasr City, 6. Oktober, New Cairo und Heliopolis."
-        data-ar="القاهرة الحديثة وتشمل مدينة نصر و6 أكتوبر والتجمع ومصر الجديدة."
-      ></li>
-
-      <li
-        data-de="Der Nil in Cairo erstreckt sich über 41 km durch die Stadt. An seinen Ufern gibt es mindestens 20 Paläste und historische Gebäude sowie die Inseln Rhoda, Zamalek und Warraq."
-        data-ar="نهر النيل حيث تقع مدينة القاهرة بطول 41 كيلو م عليه وهناك مالايقل عن 20 مابين قصور ومباني أثرية على ضفافه بالإضافة إلى جزر الروضة والزمالك والوراق."
-      ></li>
-
-      <li
-        data-de="Die Gräber von Imam Schafi'i, die lateinischen Friedhöfe und die Mamluken-Gräber sind von einer Schönheit, die mit dem Taj Mahal vergleichbar ist."
-        data-ar="مقابر الإمام الشافعي ومقابر اللاتين ومقابر المماليك لأن بهم مقابر لا تقل جمالا عن تاج محل."
-      ></li>
-
-      <li
-        data-de="Eine Stadtrundfahrt mit dem Auto oder Bus in Cairo, der sechstgrößten Metropole der Welt mit 22,5 Millionen Einwohnern, zeigt, wie und wo diese riesige Bevölkerung lebt."
-        data-ar="جولة بالسيارة أو الحافلة في القاهرة، سادس أكبر مدينة عالمية عددا للسكان بـ 22 ونصف مليون نسمة لنرى كيف يعيش وأين هذا العدد الكبير من الناس."
-      ></li>
-
-      <li
-        data-de="Genießen Sie das Nachtleben in Cairos Restaurants und Cafés, besuchen Sie Vergnügungsparks, den Zirkus, das Masr-Theater, die Oper und gehen Sie in den Einkaufszentren der Stadt shoppen."
-        data-ar="السهر في مطاعم القاهرة وكفيهاتها والتجول فيها ليلا يمكننا أيضا زيارة مدن الملاهي المختلفة والسيرك ومسرح مصر ودار الأوبرا والتسوق في مولات القاهرة."
-      ></li>
-
-      <li
-        data-de="Besuchen Sie die Parks Cairos, darunter den Fustat-Park, den Japanischen Garten, den Zoo und den Azhar-Park."
-        data-ar="الذهاب إلى حدائق القاهرة الفسطاط واليابانية وحديقة الحيوان والأزهر."
-      ></li>
-
-      <li
-        data-de="Verbringen Sie einen Tag in einem ägyptischen Dorf, um den Alltag der Bauern hautnah zu erleben."
-        data-ar="قضاء يوم في قرية مصرية لمعايشة الحياة اليومية فيها."
-      ></li>
-
-      <li
-        data-de="Eine Bootsfahrt auf den beiden Nilarmen Rosetta und Damietta bis zum Mittelmeer, mit der Möglichkeit, 14 der schönsten Städte Ägyptens entlang ihrer Ufer zu sehen."
-        data-ar="جولة في فرعي دلتا النيل رشيد ودمياط بالقارب وصولاً إلى البحر المتوسط ومشاهدة 14 مدينة من أجمل مدن مصر الواقعة على ضفافهما."
-      ></li>
-
-      <li
-        data-de="Eine Bootstour auf dem Suezkanal, der so berühmt ist wie die Pyramiden, neben den vorbeiziehenden Riesenschiffen."
-        data-ar="جولة بالقارب في قناة السويس التي تضاهي شهرتها شهرة الأهرام بجوار السفن العملاقة."
-      ></li>
+      <li>Cairo ist die sechstgrößte Stadt der Welt mit 22,5 Millionen Einwohnern. Die Stadt liegt am Nil und erstreckt sich über 41 km entlang des Flusses. Im heutigen Maßstab besteht Cairo aus vier Städten in einer. Von Cairo kann man nie genug bekommen – ob pharaonisch, koptisch, islamisch oder modern. Hier sind einige Dinge, die man in Cairo unternehmen kann.</li>
+      <li>In pharaonischem Cairo kann man die Denkmäler und Ausstellungsstücke im Ägyptischen Museum sehen, die Pyramiden von Gizeh, die Stufenpyramide von Sakkara, Dahschur sowie die alte Hauptstadt Memphis.</li>
+      <li>Im islamischen und koptischen Cairo kann man die Mohamed-Ali-Moschee, die Zitadelle von Saladin, den Religionskomplex, die Al-Azhar-Moschee, die Sultan-Hassan-Moschee sowie die Straßen von El-Muizz, Ghurija, El-Darb El-Ahmar und Gamalija besichtigen.</li>
+      <li>Das khedivische Cairo wurde von Khedive Ismail nach dem Vorbild von Paris erbaut. Heute beeindruckt seine Architektur in Gebieten wie Downtown, Garden City und Zamalek.</li>
+      <li>Das moderne Cairo umfasst Stadtteile wie Nasr City, 6. Oktober, New Cairo und Heliopolis.</li>
+      <li>Der Nil in Cairo erstreckt sich über 41 km durch die Stadt. An seinen Ufern gibt es mindestens 20 Paläste und historische Gebäude sowie die Inseln Rhoda, Zamalek und Warraq.</li>
+      <li>Die Gräber von Imam Schafi'i, die lateinischen Friedhöfe und die Mamluken-Gräber sind von einer Schönheit, die mit dem Taj Mahal vergleichbar ist.</li>
+      <li>Eine Stadtrundfahrt mit dem Auto oder Bus in Cairo, der sechstgrößten Metropole der Welt mit 22,5 Millionen Einwohnern, zeigt, wie und wo diese riesige Bevölkerung lebt.</li>
+      <li>Genießen Sie das Nachtleben in Cairos Restaurants und Cafés, besuchen Sie Vergnügungsparks, den Zirkus, das Masr-Theater, die Oper und gehen Sie in den Einkaufszentren der Stadt shoppen.</li>
+      <li>Besuchen Sie die Parks Cairos, darunter den Fustat-Park, den Japanischen Garten, den Zoo und den Azhar-Park.</li>
+      <li>Verbringen Sie einen Tag in einem ägyptischen Dorf, um den Alltag der Bauern hautnah zu erleben.</li>
+      <li>Eine Bootsfahrt auf den beiden Nilarmen Rosetta und Damietta bis zum Mittelmeer, mit der Möglichkeit, 14 der schönsten Städte Ägyptens entlang ihrer Ufer zu sehen.</li>
+      <li>Eine Bootstour auf dem Suezkanal, der so berühmt ist wie die Pyramiden, neben den vorbeiziehenden Riesenschiffen.</li>
     </ul>
   </div>
 </div>
+
 
         <div class="gallery">
           <script>
@@ -163,46 +105,25 @@
         <div class="city">
 <div class="city-content">
   <ul>
-    <h1
-      data-ar="الإسكندرية"
-      data-de="Alexandria und Elsokna am Roten Meer sind unsere neuen Reiseziele."
-    >
-      الإسكندرية
+    <h1>
+      Alexandria und Elsokna am Roten Meer sind unsere neuen Reiseziele.
     </h1>
 
-    <li
-      data-de="Alexandria ist die zweitgrößte Stadt Ägyptens und eine der schönsten Städte am Mittelmeer, mit 5,5 Millionen Einwohnern. Gegründet wurde sie von Alexander dem Großen. In der griechischen und römischen Zeit war sie die kulturelle Welthauptstadt. Kleopatra, Julius Caesar und Marcus Antonius hinterließen hier ihre Spuren. Alexandria wird auch als Zwillingsstadt von Kairo bezeichnet. An ihrer Universität lehrten Sokrates und Platon. Heute verbringen die Ägypter ihren Sommer in dieser schönen Küstenstadt mit über 330 Hotels und Ferienanlagen."
-      data-ar="عاصمة العالم الثقافية في العهدين اليوناني والروماني تعلم في جامعتها افلاطون وارسطوا وبناها الاسكندر الاكبروفيها سحرت كيلوباترا يوليوس قيصر ومارك انطونيوا وهي عاصمة مصر الصيفية وتؤام القاهرة في العمارة واكبر مدن البحر المتوسط لا تقل جمالا عن اي مدينة اروبية اخري علي البحر المتوسط. وفيها يقضي المصريين صيفهم في مصيفها الجميلة والتي تمتد في ساحل مصر الشمالي بشواطئه حيث يوجد به اكثر من 330 فندق وقرية سىياحية."
-    ></li>
+    <li>
+      Alexandria ist die zweitgrößte Stadt Ägyptens und eine der schönsten Städte am Mittelmeer, mit 5,5 Millionen Einwohnern. Gegründet wurde sie von Alexander dem Großen. In der griechischen und römischen Zeit war sie die kulturelle Welthauptstadt. Kleopatra, Julius Caesar und Marcus Antonius hinterließen hier ihre Spuren. Alexandria wird auch als Zwillingsstadt von Kairo bezeichnet. An ihrer Universität lehrten Sokrates und Platon. Heute verbringen die Ägypter ihren Sommer in dieser schönen Küstenstadt mit über 330 Hotels und Ferienanlagen.
+    </li>
 
-    <li
-      data-de="Alexandria verfügt über mehr als 20 Strände, 10 Resorts und über 290 Hotels. Westlich der Stadt erstreckt sich die Nordküste Ägyptens mit über 330 Resorts, die sich größtenteils in Privatbesitz befinden. Viele dieser Resorts stehen nur 2 bis 3 Wochen im Jahr voll besetzt, sind ansonsten frei und können vermietet werden, um die Betriebskosten zu decken. Die Nordküste liegt nur 2 Stunden mit dem Auto von Kairo entfernt. Am Roten Meer, etwa eineinhalb Stunden von Kairo, befindet sich Elsokna mit mehr als 100 Resorts und Hotels, die ebenfalls nur kurzzeitig besetzt sind. Außerdem liegt die Temperatur im Winter zwischen 20 und 25 Grad Celsius."
-      data-ar="متاحف: الآثار الرومانية، اليونانية، القبطية، الإسلامية، ومتحف الأحياء المائية"
-    ></li>
+    <li>
+      Alexandria verfügt über mehr als 20 Strände, 10 Resorts und über 290 Hotels. Westlich der Stadt erstreckt sich die Nordküste Ägyptens mit über 330 Resorts, die sich größtenteils in Privatbesitz befinden. Viele dieser Resorts stehen nur 2 bis 3 Wochen im Jahr voll besetzt, sind ansonsten frei und können vermietet werden, um die Betriebskosten zu decken. Die Nordküste liegt nur 2 Stunden mit dem Auto von Kairo entfernt. Am Roten Meer, etwa eineinhalb Stunden von Kairo, befindet sich Elsokna mit mehr als 100 Resorts und Hotels, die ebenfalls nur kurzzeitig besetzt sind. Außerdem liegt die Temperatur im Winter zwischen 20 und 25 Grad Celsius.
+    </li>
 
-    <li
-      data-de="Eine Badewoche mit Frühstück umfasst 7 Tage und 6 Nächte für 200 Euro pro Person, alles inklusive. Für Gruppen ab 4 Personen beträgt der Preis 700 Euro für alle inklusive Frühstück und Vollpension. Kinder sind im Ferienhaus in 3- oder 4-Sterne-Resorts kostenlos untergebracht."
-      data-ar="معالم أثرية: مقابر كوم الشقافة، قلعة قايتباي، المسرح الروماني، وعمود السواري"
-    ></li>
+    <li>
+      Eine Badewoche mit Frühstück umfasst 7 Tage und 6 Nächte für 200 Euro pro Person, alles inklusive. Für Gruppen ab 4 Personen beträgt der Preis 700 Euro für alle inklusive Frühstück und Vollpension. Kinder sind im Ferienhaus in 3- oder 4-Sterne-Resorts kostenlos untergebracht.
+    </li>
 
-    <li
-      data-de=" im Alixandria gibt,s viels zumachen schons wetter das ganze jhar .verschiedne betzieke alte oder cotisch und modene viele schlosse museun garten strande restaurnts kaffee hauser hestoriche grab anlagen und gebauden mann kann nie genug von alixandria haben."
-      data-ar="حدائق: أنطونيادس، النزهة، الورود، والشلالات"
-    ></li>
-
-    <li
-      data-de=""
-      data-ar="القصور: المنتزه، السلاملك، ورأس التين"
-    ></li>
-
-    <li
-      data-de=""
-      data-ar="عاصمة العالم الثقافية في العهدين اليوناني والروماني"
-    ></li>
-
-    <li data-de="" data-ar=""></li>
-    <li data-de="" data-ar=""></li>
-    <li data-de="" data-ar=""></li>
+    <li>
+      im Alixandria gibt,s viels zumachen schons wetter das ganze jhar .verschiedne betzieke alte oder cotisch und modene viele schlosse museun garten strande restaurnts kaffee hauser hestoriche grab anlagen und gebauden mann kann nie genug von alixandria haben.
+    </li>
   </ul>
 </div>
 
@@ -238,9 +159,6 @@
     ></iframe>
   </div>
   <h3
-  data-ar="ألإسكندرية"
-  data-de="Alexandria"
-
   style="text-align: center; margin-top: 8px">Alexandria</h3>
 </div>
 
@@ -262,9 +180,8 @@
       "
     ></iframe>
   </div>
-              <h3 data-ar="مصر"
-            data-de="Ägypten"
-            style="text-align: center; margin-top: 8px">Cairo</h3>
+              <h3
+            style="text-align: center; margin-top: 8px">Ägypten</h3>
 </div>
 
           <!-- فيديو 1 -->
@@ -286,8 +203,6 @@
               ></iframe>
             </div>
             <h3
-              data-ar="ألإسكندرية"
-              data-de="Alexandria"
             style="text-align: center; margin-top: 8px">Alexandria</h3>
           </div>
 
@@ -310,8 +225,6 @@
               ></iframe>
             </div>
             <h3
-              data-ar="منتجعات في الساحل الشمالي"
-              data-de="einge resorts an die nord kuste"
             style="text-align: center; margin-top: 8px">
               einge resorts an die nord kuste
             </h3>
@@ -336,8 +249,6 @@
               ></iframe>
             </div>
             <h3
-              data-ar="منتجعات العين السخنة"
-              data-de="einge resorts an el sokna"
             style="text-align: center; margin-top: 8px">
               einge resorts an el sokna
             </h3>
@@ -362,8 +273,6 @@
               ></iframe>
             </div>
             <h3
-              data-ar="شواطئ الإسكندرية"
-  data-de="Strände von Alexandria"
             style="text-align: center; margin-top: 8px">
               Strände von Alexandria
             </h3>
@@ -384,56 +293,23 @@
         </div>
 
 <div class="city">
-  <div class="city-content">
-    <ul>
-            <p data-ar="في الأقصر و أسوان نري جلياً إبداع الفراعنة في التصميم و الإنشاء و الفن والبناء حيث نري في الأقصر و أسوان ما هو موجود هناك فقط و ليس في أي مكان اخر بالعالم حيث يتجلي ذلك في جبل السلسلة في أسوان حيث نري هناك المسله الناقصه حيث كان يقطعون و يصنعون التماثيل و المسلات و أعمدة المعابد بأوزان تتراوح للقطعه الواحده من 2 طن حتي 100 طن و ينقلوها في النيل إلي معابدهم المختلفه و يتجلي ذلك في المسلات وما نراه جلياً أيضا في غرفة الدفن في الهرم الأكبر حيث تزن الحجارة المكونه لسقف الهرم من أحجار يزن الواحد منها ما بين 40 إلي 60 طن "
-              style="font-size: 20px; font-weight: bold; line-height: 1.6;">
-</p>
-      <h1 data-ar="الأقصر وأسوان" data-de="Luxor und Aswan">
-        الأقصر وأسوان
-      </h1>
-      <li
-        data-de="Lassen Sie sich überraschen, wie die Pharaonen all diese Bauwerke geschaffen haben."
-        data-ar="حيث الآثار والمعابد الفرعونية القديمة "
-      ></li>
+<div class="city-content">
+  <ul>
+    <h1>Luxor und Aswan</h1>
 
-      <li
-        data-de="1- Hier können Sie den Karnak-Tempel-Komplex besichtigen."
-        data-ar="معابد الكرنك وحتشبسوت وأبو سمبل ومقابر وادي الملوك والمسلة الناقصة"
-      ></li>
-
-      <li
-        data-de="2- Tal der Könige und Königinnen: Lassen Sie sich von den 90 Grabanlagen verzaubern."
-        data-ar="معبد الكرنك ووادي الملوك والملكات"
-      ></li>
-
-      <li
-        data-de="3- Besichtigen Sie den Tempel von Ramses II., den Tempel der Königin Hatschepsut und den Tempel von Thutmosis III."
-        data-ar="نهر النيل الذي تقع عليه كلتا المدينتين"
-      ></li>
-
-      <li
-        data-de="4- In Aswan können Sie den Abu-Simbel-Tempel sowie den Kom-Ombo-Tempel besichtigen."
-        data-ar="معابد مدينة هابو والسد العالي بأسوان"
-      ></li>
-
-      <li
-        data-de="5- Der Horus-Tempel in Edfu und der Tempel von Philae sind ebenfalls sehenswert."
-        data-ar=""
-      ></li>
-
-      <li
-        data-de="6- Der Assuaner Steinbruch: Hier fertigten die Pharaonen ihre Denkmäler und Tempel. Sie können den unvollendeten Obelisken und Teile von Tempeln besichtigen."
-        data-ar=""
-      ></li>
-
-      <li
-        data-de="7- Besuchen Sie den Hochstaudamm von Assuan und den Nasser-See."
-        data-ar=""
-      ></li>
-    </ul>
-  </div>
+    <li>Lassen Sie sich überraschen, wie die Pharaonen all diese Bauwerke geschaffen haben.</li>
+    <li class="no-bullet">1- Hier können Sie den Karnak-Tempel-Komplex besichtigen.</li>
+    <li class="no-bullet">2- Tal der Könige und Königinnen: Lassen Sie sich von den 90 Grabanlagen verzaubern.</li>
+    <li class="no-bullet">3- Besichtigen Sie den Tempel von Ramses II., den Tempel der Königin Hatschepsut und den Tempel von Thutmosis III.</li>
+    <li class="no-bullet">4- In Aswan können Sie den Abu-Simbel-Tempel sowie den Kom-Ombo-Tempel besichtigen.</li>
+    <li class="no-bullet">5- Der Horus-Tempel in Edfu und der Tempel von Philae sind ebenfalls sehenswert.</li>
+    <li class="no-bullet">6- Der Assuaner Steinbruch: Hier fertigten die Pharaonen ihre Denkmäler und Tempel. Sie können den unvollendeten Obelisken und Teile von Tempeln besichtigen.</li>
+    <li class="no-bullet">7- Besuchen Sie den Hochstaudamm von Assuan und den Nasser-See.</li>
+  </ul>
 </div>
+
+</div>
+
 
 
         <div class="gallery">
@@ -450,19 +326,19 @@
 
 <div class="city">
   <div class="city-content">
-    <h1 data-ar="سيناء" data-de="Sinai">سيناء</h1>
+    <h1>Sinai</h1>
     <ul>
-      <li
-        data-de="Der einzige Ort, an dem der Herr der Welten einem Teil Seines Wesens erschien und wo die meisten Wunder unseres Meisters Moses mit seinem Volk geschahen. Wir werden diese Orte besichtigen: Wadi Asla, eines der schönsten farbigen Täler der Welt, das heilige Tal Tuwa, den Berg Moses und den Tempel der Hathor, wo Moses die Zehn Gebote von Gott erhielt."
-        data-ar="المكان الوحيد الذي تجلي فيه رب العالمين علي جزء من كونه وفيها حدثت اغلب معجزات سيدنا موسي مع قومه حيث سنتجول في تلك الاماكن وهي وادي اسلا احد اجمل الوديان الملونة بالعالم والوادي المقدس طوي وجبل موسي ومعبد حتحور حيث قال بني اسرائيل اجعل لنا الاه كما لهم الهة.
-        "
-      >
-        المكان الذي تجلى فيه الله وتلقى موسى الوصايا العشر، ويشمل أيضًا
-        المعجزات العشر مع قومه.
+      <li style="font-size: 18px; line-height: 1.8;">
+        Der einzige Ort, an dem der Herr der Welten einem Teil Seines Wesens 
+        erschien und wo die meisten Wunder unseres Meisters Moses mit seinem Volk 
+        geschahen. Wir werden diese Orte besichtigen: Wadi Asla, eines der schönsten 
+        farbigen Täler der Welt, das heilige Tal Tuwa, den Berg Moses und den Tempel 
+        der Hathor, wo Moses die Zehn Gebote von Gott erhielt.
       </li>
     </ul>
   </div>
 </div>
+
 
       </section>
 
@@ -480,7 +356,7 @@
 
 <section id="prices" class="prices-section">
   <div class="city">
-    <h3 data-de="Preise und Dienstleistungen" data-ar="الأسعار والخدمات">
+    <h3>
       Prices and Services
     </h3>
   </div>
@@ -488,49 +364,32 @@
   <div style="margin-top: 20px"></div>
 
   <!-- Prices List -->
-  <ul class="price-list">
-    <li
-      style="font-size: 1.3rem; font-weight: bold"
-      data-de="7 tage und 6 nächte bade und erholungsurlaub in Alexandria oder Esokna am rotem Meer oder im nord kuste im 3 oder 4 sterne resorts was zur zeit frei ist mit fruhstuck 200 Eouro per person ohne internationalsflugtickt."
-      data-ar="7 أيام و6 ليالي إجازة سباحة واستجمام في الإسكندرية أو العين السخنة على البحر الأحمر أو في الساحل الشمالي في منتجعات 3 أو 4 نجوم المتاح حالياً مع الإفطار مقابل 200 دولار للشخص أو كل الوجبات 300 دولار بدون تذكرة الطيران الدولي.">
-      Full Day Tour - $70 per day including transport and meals
-    </li>
+<ul class="price-list">
+  <li style="font-size: 1.3rem; font-weight: bold">
+7 tage und 6 nächte bade und erholungsurlaub in Alexandria oder Esokna am rotem Meer oder im nord kuste im 3 oder 4 sterne resorts was zur zeit frei ist mit fruhstuck 200 Eouro per person ohne internationalsflugtickt.
+  </li>
 
-    <li
-      style="font-size: 1.3rem; font-weight: bold"
-      data-de="10 tage paket 7 davon bade urlaub wie nummer 1 und 3 tage cairo sehenswurdigkeitn besechtigen 550 Eouro mit fruhstuck und alles inklusive 700 euro in 4 oder 5 sterne hotls oder resorts ,wos zur zeit frei ist ohne internationalsflugtickt."
-      data-ar="باقة 10 أيام: 7 أيام إجازة سباحة مثل العرض الأول + 3 أيام لزيارة معالم القاهرة، بسعر 550 دولار مع الإفطار، و700 دولار شاملة كلياً في فنادق أو منتجعات 4 أو 5 نجوم (حسب المتاح)، بدون تذكرة الطيران الدولي.">
-      Apartments and Villas for Families - Starting at $50 per day including meals
-    </li>
+  <li style="font-size: 1.3rem; font-weight: bold">
+10 tage paket 7 davon bade urlaub wie nummer 1 und 3 tage cairo sehenswurdigkeitn besechtigen 550 Eouro mit fruhstuck und alles inklusive 700 euro in 4 oder 5 sterne hotls oder resorts ,wos zur zeit frei ist ohne internationalsflugtickt.
+  </li>
 
-    <li
-      style="font-size: 1.3rem; font-weight: bold"
-      data-de="10-tägiges Programm: 3 Tage Baden und Erholung, 3 Tage in Cairo, ein Tag am Suezkanal mit Besuch seiner vier Städte und Frühstück in Afrika sowie Mittagessen in Asien, da der Suezkanal die Grenze zwischen beiden Kontinenten bildet. 2 Tage in Alexandria und ein Tag im Nildelta, um einige seiner 80 Städte zu besichtigen. Preis: 1300 US-Dollar, alles inklusive in 4- oder 5-Sterne-Hotels oder Resorts (je nach Verfügbarkeit), ohne internationales Flugticket."
-      data-ar="برنامج 10 أيام: 3 أيام سباحة واستجمام، 3 أيام في القاهرة، يوم في قناة السويس وزيارة مُدنها الأربعة مع تناول الإفطار في قارة أفريقا والغداء في قارة آسيا حيث أن قناة السويس هي الحدود الفاصلة بين قارة آسيا و أفريقا ، يومين في الإسكندرية، ويوم في دلتا النيل لزيارة بعض مدنها من بين 80 مدينة، بسعر 1300 دولار شامل كلياً في فنادق أو منتجعات 4 أو 5 نجوم (حسب المتاح)، بدون تذكرة الطيران الدولي.">
-      Airport Transfer - $25
-    </li>
+  <li style="font-size: 1.3rem; font-weight: bold">
+10-tägiges Programm: 3 Tage Baden und Erholung, 3 Tage in Cairo, ein Tag am Suezkanal mit Besuch seiner vier Städte und Frühstück in Afrika sowie Mittagessen in Asien, da der Suezkanal die Grenze zwischen beiden Kontinenten bildet. 2 Tage in Alexandria und ein Tag im Nildelta, um einige seiner 80 Städte zu besichtigen. Preis: 1300 US-Dollar, alles inklusive in 4- oder 5-Sterne-Hotels oder Resorts (je nach Verfügbarkeit), ohne internationales Flugticket.
+  </li>
 
-    <li
-      style="font-size: 1.3rem; font-weight: bold"
-      data-de="14 tage programm 7 tage bnden und erholen in aelxandria oder nord kuste des mittelmeers oder in sokna am rotes meer und 3 tage cairo und 3 tage luxur und asuan mit fulg tickt von cairo nach Asuan alles inklusive in 4 oder 5 sterne hotls oder resorts ,wos zur zeit frei ist ohne internationals flugtickt fur 2000 Eouro."
-      data-ar="برنامج 14 يوم: 7 أيام سباحة واستجمام في الإسكندرية أو الساحل الشمالي على البحر المتوسط أو في العين السخنة على البحر الأحمر + 3 أيام في القاهرة + 3 أيام في الأقصر وأسوان مع تذكرة الطيران من القاهرة إلى أسوان، بسعر 2000 دولار شامل كلياً في فنادق أو منتجعات 4 أو 5 نجوم (حسب المتاح)، بدون تذكرة الطيران الدولي.">
-      Flight Transfers Between Cities - $50 to $70
-    </li>
+  <li style="font-size: 1.3rem; font-weight: bold">
+14 tage programm 7 tage bnden und erholen in aelxandria oder nord kuste des mittelmeers oder in sokna am rotes meer und 3 tage cairo und 3 tage luxur und asuan mit fulg tickt von cairo nach Asuan alles inklusive in 4 oder 5 sterne hotls oder resorts ,wos zur zeit frei ist ohne internationals flugtickt fur 2000 Eouro.
+  </li>
 
-    <li
-      style="font-size: 1.3rem; font-weight: bold"
-      data-de="15 TAGE PROGRAMM 6 tage bade urlaub selbest aussuchen .3 tage cairo  ein tag im Nildelta um einge von Delta stade zu sehen mit dem boot oder auto und ein tag im seuz canal und ihr 4 stadte zu sehen.und mit dem flug nach Luxer und Asuan um die Tempel von den phraonen zu sehen das alless inklusive in 4 oder 5 sterne hotls oder resorts ,wos zur zeit frei ist und ohne internationals flugtickt fur 2500 EURO."
-      data-ar="برنامج 15 يوم: 6 أيام إجازة سباحة و إستجمام حسب الاختيار، 3 أيام في القاهرة، يوم في دلتا النيل لزيارة بعض المدن بالقارب أو السيارة، يوم في قناة السويس وزيارة 4 مدن، ثم السفر بالطائرة إلى الأقصر وأسوان لزيارة معابد الفراعنة، بسعر 2500 دولار شامل كلياً في فنادق أو منتجعات 4 أو 5 نجوم (حسب المتاح)، بدون تذكرة الطيران الدولي.">
-      Night Program with Dinner - $50
-    </li>
+  <li style="font-size: 1.3rem; font-weight: bold">
+15 TAGE PROGRAMM 6 tage bade urlaub selbest aussuchen .3 tage cairo  ein tag im Nildelta um einge von Delta stade zu sehen mit dem boot oder auto und ein tag im seuz canal und ihr 4 stadte zu sehen.und mit dem flug nach Luxer und Asuan um die Tempel von den phraonen zu sehen das alless inklusive in 4 oder 5 sterne hotls oder resorts ,wos zur zeit frei ist und ohne internationals flugtickt fur 2500 EURO.
+  </li>
 
-    <li
-      style="font-size: 1.3rem; font-weight: bold"
-      data-de="Es wird Agyptisches Essen serviert."
-      data-ar="سيتم تقديم الطعام المصري.">
-      Es wird Agyptisches Essen serviert.
-    </li>
-  </ul>
+  <li style="font-size: 1.3rem; font-weight: bold">
+    Es wird ägyptisches Essen serviert.
+  </li>
+</ul>
+
 
   <!-- Contact and Form Section -->
   <div class="contact-form-section">
@@ -541,107 +400,88 @@
     <!-- Contact and Form Container -->
     <div class="contact-container">
       <!-- Contact Information -->
-      <div class="contact-info">
-        <h4
-          style="font-size: 1.4rem; font-weight: bold; color: crimson; margin-bottom: 20px;"
-          data-de="Contact"
-          data-ar="التواصل">
-          Contact
-        </h4>
+<div class="contact-info">
+  <h4 style="font-size: 1.4rem; font-weight: bold; color: crimson; margin-bottom: 20px;">
+    Contact
+  </h4>
 
-        <ul class="contact-list">
-          <li style="font-size: 1.3rem; font-weight: bold; margin-bottom: 15px;">
-            <a 
-              href="https://wa.me/201017919696" 
-              target="_blank" 
-              style="text-decoration: none; color: inherit;"
-              data-de="Telefon und WhatsApp: +201017919696"
-              data-ar="الهاتف وواتساب: +201017919696">
-              📞 Phone & WhatsApp: +201017919696
-            </a>
-          </li>
+  <ul class="contact-list">
+    <li style="font-size: 1.3rem; font-weight: bold; margin-bottom: 15px;">
+      <a 
+        href="https://wa.me/201017919696" 
+        target="_blank" 
+        style="text-decoration: none; color: inherit;">
+        📞 Telefon und WhatsApp: +201017919696
+      </a>
+    </li>
 
-          <li style="font-size: 1.3rem; font-weight: bold; margin-bottom: 15px;">
-            <a 
-              href="mailto:gram.gti.egy@gmail.com" 
-              style="text-decoration: none; color: inherit;"
-              data-de="E-Mail: gram.gti.egy@gmail.com"
-              data-ar="البريد الإلكتروني: gram.gti.egy@gmail.com">
-              ✉️ Email: gram.gti.egy@gmail.com
-            </a>
-          </li>
+    <li style="font-size: 1.3rem; font-weight: bold; margin-bottom: 15px;">
+      <a 
+        href="mailto:gram.gti.egy@gmail.com" 
+        style="text-decoration: none; color: inherit;">
+        ✉️ E-Mail: gram.gti.egy@gmail.com
+      </a>
+    </li>
 
-          <li style="font-size: 1.3rem; font-weight: bold; margin-bottom: 15px;">
-            <a 
-              href="https://maps.app.goo.gl/nh4zktR9hxVaSXCG6" 
-              target="_blank" 
-              style="text-decoration: none; color: inherit;"
-              data-de="Adresse: El-Azizia, Minya Al Qamh / Al Sharqia"
-              data-ar="العنوان: العزيزية منيا القمح / الشرقية">
-              📍 Address: El-Azizia, Minya Al Qamh / Al Sharqia
-            </a>
-          </li>
-        </ul>
+    <li style="font-size: 1.3rem; font-weight: bold; margin-bottom: 15px;">
+      <a 
+        href="https://maps.app.goo.gl/nh4zktR9hxVaSXCG6" 
+        target="_blank" 
+        style="text-decoration: none; color: inherit;">
+        📍 Adresse: El-Azizia, Minya Al Qamh / Al Sharqia
+      </a>
+    </li>
+  </ul>
+</div>
 
-        <!-- Executive Director Info -->
-
-      </div>
 
       <!-- Contact Form -->
-      <div class="contact-form-container">
-        <form
-          id="contactForm"
-          class="contact-form"
-          action="https://api.web3forms.com/submit"
-          method="post">
-          <input
-            type="hidden"
-            name="access_key"
-            value="1c6a1854-4d71-4648-936e-4d2586562941"
-          />
+<div class="contact-form-container">
+  <form
+    id="contactFormDe"
+    class="contact-form"
+    action="https://api.web3forms.com/submit"
+    method="post">
+    
+    <input
+      type="hidden"
+      name="access_key"
+      value="1c6a1854-4d71-4648-936e-4d2586562941"
+    />
 
-          <input
-            type="text"
-            name="name"
-            data-placeholder-de="Name"
-            data-placeholder-ar="الاسم"
-            placeholder="الاسم"
-            required
-          />
+    <input
+      type="text"
+      name="name"
+      placeholder="Name"
+      required
+    />
 
-          <input
-            type="text"
-            name="phone"
-            data-placeholder-de="Telefon"
-            data-placeholder-ar="التليفون"
-            placeholder="التليفون"
-            required
-          />
+    <input
+      type="text"
+      name="phone"
+      placeholder="Telefon"
+      required
+    />
 
-          <input
-            type="email"
-            name="email"
-            data-placeholder-de="E-Mail"
-            data-placeholder-ar="البريد الإلكتروني"
-            placeholder="البريد الإلكتروني"
-            required
-          />
+    <input
+      type="email"
+      name="email"
+      placeholder="E-Mail"
+      required
+    />
 
-          <textarea
-            name="message"
-            data-placeholder-de="Ihre Nachricht"
-            data-placeholder-ar="رسالتك"
-            rows="5"
-            placeholder="رسالتك"
-            required></textarea>
+    <textarea
+      name="message"
+      rows="5"
+      placeholder="Ihre Nachricht"
+      required></textarea>
 
-          <button type="submit" data-de="Senden" data-ar="إرسال">
-            إرسال
-          </button>
+    <button type="submit">Senden</button>
 
-          <p id="formResponse" style="display: none"></p>
-        </form>
-      </div>
+    <p id="formResponseDe" style="display: none"></p>
+  </form>
+</div>
+
     </div>
   </div>
 </section>
@@ -649,80 +489,69 @@
 <section id="prices" class="prices-section" lang="de">
 <!-- Team Images Section -->
 <div class="team-images-section">
-  <div class="team-images-container">
-    
-    <!-- Executive Director -->
-    <div class="team-member">
-      <img
-        src="image/85633041359.png"
-        alt="Executive Director"
-        class="team-member-image"
-      />
-      <div class="team-member-name" 
-           data-de="Abdel Moniem Abdullah" 
-           data-ar="عبد المنعم عبدالله">
-        عبد المنعم عبدالله
-      </div>
-      <div class="team-member-title" 
-           data-de="Geschäftsführer" 
-           data-ar="المدير التنفيذي">
-        المدير التنفيذي
-      </div>
+<div class="team-images-container">
+  
+  <!-- Executive Director -->
+  <div class="team-member">
+    <img
+      src="image/85633041359.png"
+      alt="Geschäftsführer"
+      class="team-member-image"
+    />
+    <div class="team-member-name">
+      Abdel Moniem Abdullah
     </div>
-
-    <!-- German Department Manager -->
-    <div class="team-member">
-      <img
-        src="image/mohamed.png"
-        alt="German Department Manager"
-        class="team-member-image"
-      />
-      <div class="team-member-name" 
-           data-de="Mohamed Abdel Moniem" 
-           data-ar="محمد عبد المنعم">
-        محمد عبد المنعم
-      </div>
-      <div class="team-member-title" 
-           data-de="der deutsche abteilungsleiter hat BWL studiert hat bei Vodafone DE und Amazon DE GEARBEITET." 
-           data-ar="دارس لإدارة الأعمال و عمل بشركتي فودافون و أمازون بألمانيا و هو مدير القسم الألماني">
-        دارس لإدارة الأعمال و عمل بشركتي فودافون و أمازون بألمانيا و هو مدير القسم الألماني
-      </div>
-    </div>
-
-    <!-- English Department Manager -->
-    <div class="team-member">
-      <img
-        src="image/rana.png"
-        alt="English Department Manager"
-        class="team-member-image"
-      />
-      <div class="team-member-name" 
-           data-de="Rana Abdel Moniem" 
-           data-ar="رنا عبد المنعم">
-        رنا عبد المنعم
-      </div>
-      <div class="team-member-title" 
-           data-de="hat BWL STUDIERT UND SIE IST DIE ENGLISCH ABTEILUNGSLEITERIN" 
-           data-ar="درست إدارة الأعمال و هي مديرة القسم الإنجليزي">
-        درست إدارة الأعمال و هي مديرة القسم الإنجليزي
-      </div>
-    </div>
-
+      <div class="team-member-title">
+    Studium der Geschichte
   </div>
+    <div class="team-member-title">
+      Geschäftsführer
+    </div>
+  </div>
+
+  <!-- German Department Manager -->
+  <div class="team-member">
+    <img
+      src="image/mohamed.png"
+      alt="der deutsche Abteilungsleiter"
+      class="team-member-image"
+    />
+    <div class="team-member-name">
+      Mohamed Abdel Moniem
+    </div>
+    <div class="team-member-title">
+      der deutsche abteilungsleiter hat BWL studiert hat bei Vodafone DE und Amazon DE GEARBEITET.
+    </div>
+  </div>
+
+  <!-- English Department Manager -->
+  <div class="team-member">
+    <img
+      src="image/rana.png"
+      alt="Englisch Abteilungsleiterin"
+      class="team-member-image"
+    />
+    <div class="team-member-name">
+      Rana Abdel Moniem
+    </div>
+    <div class="team-member-title">
+      hat BWL STUDIERT UND SIE IST DIE ENGLISCH ABTEILUNGSLEITERIN
+    </div>
+  </div>
+
+</div>
+
 </div>
 </section>
-      <section id="about" class="about-section">
-        <h2 data-de="Über Uns" data-ar="عن الشركة"></h2>
-        <p
-          data-de="Ich als Geschäftsführer habe zehn Jahre lang in Österreich gelernt und gearbeitet. Zuletzt war ich selbstständig tätig. Ich habe gesehen, wie hart die Leute arbeiten und wie sehr sie sich auf den Urlaub freuen.
-Ich sorge dafür, dass meine Gäste mit einem Lächeln nach Hause fliegen – mit dem Gefühl:
-'Wir haben viel erlebt, aber es war nicht genug – wir wollen noch einmal kommen.'"
-          data-ar="بصفتي مديرًا عامًا، فقد تعلمتُ وعملتُ في النمسا لمدة عشر سنوات، وكنت في آخرها أعمل بشكل مستقل. لقد رأيت مدى جدية الناس في عملهم، وكيف يتطلعون بشوق إلى عطلتهم.
-وأنا أحرص على أن يعود ضيوفي إلى ديارهم بابتسامة، حاملين شعورًا يقول:
-'لقد استمتعنا كثيرًا، لكنه لم يكن كافيًا... نريد أن نعود مرة أخرى.'
-ولقد قرأت كثيراً وسمعت عما يلاقيه الإخوة العرب في مصر من استنزاف مادياً ونفسياً، وأنا سأعمل جاهداً أن يكونوا في أعيننا حتى يعودوا إلى وطنهم سعداء بصورة جديدة عن مصر. سجل تجاري رقم 79314 بتاريخ 17/1/1998 صادر من مكتب سجل تجاري الزقازيق محافظة الشرقية. و رقم البطاقة الضريبية 200-146-874 مأمورية الشركات المساهمه بالقاهرة"
-        ></p>
-      </section>
+<section id="about" class="about-section">
+  <h2>Über Uns</h2>
+  <p>
+    Ich als Geschäftsführer habe zehn Jahre lang in Österreich gelernt und gearbeitet. Zuletzt war ich selbstständig tätig. Ich habe gesehen, wie hart die Leute arbeiten und wie sehr sie sich auf den Urlaub freuen.
+    Ich sorge dafür, dass meine Gäste mit einem Lächeln nach Hause fliegen – mit dem Gefühl:
+    'Wir haben viel erlebt, aber es war nicht genug – wir wollen noch einmal kommen.'
+  </p>
+</section>
+
 
       <footer>
         <p>© 2025 Gram.EGY - Copyrights @ Abdelmonem Abdalla GMPH</p>
