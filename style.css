@@ -30,7 +30,6 @@ html {
 body {
   background: var(--background);
   color: var(--text);
-  font-family: Arial, sans-serif;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -270,7 +269,6 @@ section {
 }
 
 .city-content li:before {
-  content: "•";
   color: var(--secondary);
   position: absolute;
   left: 0;
@@ -295,7 +293,6 @@ section {
 /* RTL Support for Arabic */
 [lang="ar"] {
   direction: rtl;
-  font-family: "Amiri", serif;
 }
 
 [lang="ar"] .price-list {
@@ -586,10 +583,23 @@ html[lang="ar"] .hero-content p {
 .about-section {
   padding: 50px 20px;
   background-color: #f9f9f9;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.8;
-  direction: ltr;
   transition: all 0.3s ease-in-out;
+}
+/* للغة العربية */
+[lang="ar"] .about-section,
+.lang-ar .about-section {
+  direction: rtl;
+  text-align: right;
+  list-style-position: inside; /* يخلي الدائرة تيجي مع النص */
+}
+
+/* للغة الألمانية */
+[lang="de"] .about-section,
+.lang-de .about-section {
+  direction: ltr;
+  text-align: left;
+  list-style-position: inside;
 }
 
 .about-section h2 {
@@ -609,9 +619,12 @@ html[lang="ar"] .hero-content p {
 
 body {
   margin: 0;
-  font-family: "Cairo", sans-serif;
   background-color: #f8f9fa;
+}
+[lang="ar"] ul li {
   direction: rtl;
+  text-align: right;
+  list-style-position: inside; /* يخلي الدائرة تبقى مع النص */
 }
 
 header {
@@ -808,8 +821,8 @@ body[dir="rtl"] .contact-list a:hover {
 }
 
 .team-member-image {
-  width: 160px;
-  height: 160px;
+  width: 250px;
+  height: 250px;
   border-radius: 8px;
   object-fit: cover;
   border: 2px solid #ddd;
@@ -1064,4 +1077,32 @@ body[dir="rtl"] .contact-list a:hover {
   .team-member-description {
     font-size: 0.85rem;
   }
+}
+
+/* للعربي */
+[lang="ar"] ul {
+  list-style: disc;
+  list-style-position: inside;
+  direction: rtl;
+}
+
+/* للألماني */
+[lang="de"] ul {
+  list-style: disc;
+  list-style-position: inside;
+  direction: ltr;
+}
+
+
+
+
+
+
+.city-content ul {
+  list-style: disc; /* الافتراضي: دوائر */
+  padding-left: 20px;
+}
+
+.city-content ul .no-bullet {
+  list-style: none; /* يشيل الدايرة */
 }
