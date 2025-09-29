@@ -30,8 +30,6 @@ function switchLanguage(lang) {
   document.title = titles[lang];
 }
 
-
-
 // Handle form submission
 // document.getElementById('contactForm').addEventListener('submit', function(e) {
 //     e.preventDefault();
