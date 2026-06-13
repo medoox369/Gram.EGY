@@ -126,8 +126,7 @@ nav {
 
 /* تصميم القسم الرئيسي (Hero) */
 .hero {
-  background: linear-gradient(var(--overlay), var(--overlay)),
-    url("image/wallpaperflare.com_wallpaper.jpg");
+  background:url("./New_Image/62.jpg");
   background-size: cover;
   background-position: center;
   height: 70vh;
@@ -260,8 +259,7 @@ section {
 }
 
 .city-content li {
-  font-size: 1.3rem;
-  font-weight: bold;
+  font-size: 1.1rem;
   color: #000000;
   margin-bottom: 1rem;
   padding-left: 1.5rem;
@@ -1094,4 +1092,344 @@ body[dir="rtl"] .contact-list a:hover {
 
 .city-content ul .no-bullet {
   list-style: none; /* يشيل الدايرة */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nxv-tour-shell {
+    width: 95%;              /* 👈 أعرض */
+    max-width: 1400px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+    transition: 0.3s ease;
+}
+
+.nxv-tour-shell:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+.nxv-tour-layout {
+    display: flex;
+    align-items: stretch;
+    height: 180px;   /* 👈 أقصر من قبل */
+}
+
+/* الصورة */
+.nxv-tour-visual {
+    width: 40%;      /* 👈 النص أكبر شوية */
+    height: 100%;
+}
+
+.nxv-tour-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* النص */
+.nxv-tour-details {
+    width: 60%;
+    padding: 16px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nxv-tour-title {
+    font-size: 1.3rem;
+    margin: 0 0 6px;
+    color: #1c2b46;
+}
+
+.nxv-tour-text {
+    font-size: 13.5px;
+    line-height: 1.4;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nxv-tour-layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nxv-tour-visual {
+        width: 100%;
+        height: 180px;
+    }
+
+    .nxv-tour-details {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
+.city-image {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* 👇 أهم تعديل هنا */
+.city-image img {
+    width: 100%;
+    height: 800px;        /* زودنا الارتفاع */
+    object-fit: cover;    /* يملأ المساحة بشكل جميل */
+    display: block;
+}
+
+/* Hover effect */
+.city-image img:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+    .city-image img {
+        height: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Section */
+.contact-form-section {
+  padding: 60px 20px;
+  background: #f8fafc;
+}
+
+/* Separator */
+.separator {
+  text-align: center;
+  color: #d1d5db;
+  letter-spacing: 2px;
+}
+
+/* Container */
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Contact Info Card */
+.contact-info {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h4 {
+  color: #dc143c !important;
+  margin-bottom: 25px !important;
+  position: relative;
+}
+
+.contact-info h4::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #dc143c;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Contact List */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 18px !important;
+}
+
+.contact-list a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 12px;
+  text-decoration: none !important;
+  color: #222 !important;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.contact-list a:hover {
+  background: #ffffff;
+  border-color: #dc143c;
+  transform: translateX(6px);
+  box-shadow: 0 6px 15px rgba(220, 20, 60, 0.15);
+}
+
+/* Form Container */
+.contact-form-container {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info,
+  .contact-form-container {
+    padding: 25px;
+  }
+
+  .contact-list a {
+    font-size: 15px;
+  }
+}
+.contact-list li {
+  list-style: none;
+}
+
+
+
+
+
+
+.team-images-section {
+    padding: 80px 20px;
+    background: #f8f9fb;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.team-header h2 {
+    font-size: 2.8rem;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.team-header p {
+    color: #6b7280;
+    font-size: 1.1rem;
+}
+
+/* Grid */
+.team-images-container {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+/* Card */
+.team-member {
+    background: #fff;
+    border-radius: 24px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    transition: all .3s ease;
+    border: 1px solid #eef1f5;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 45px rgba(0,0,0,.12);
+}
+
+/* Image */
+.team-member-image {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+
+/* Name */
+.team-member-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+/* Position */
+.team-member-title {
+    color: #4b5563;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* خط صغير تحت الاسم */
+.team-member-name::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #e09b07;
+    margin: 12px auto 0;
+    border-radius: 50px;
 }
